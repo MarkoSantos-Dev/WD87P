@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!--Charset: Specifies the character encoding for the webpage.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Viewport: Defines how the webpage should be displayed on different devices, especially for responsive design.-->
+    
+    <title>Hello World</title>  <!--Title: The title of the webpage, which appears in the browser's title bar or tab-->
+    <!-- start of favicon -->
+    <!-- Favicons: Small icons that represent the website and appear in browser tabs or bookmarks. -->
+    <link rel="icon" href="./favicon-16x16.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- end of favicon -->
+</head>
+<body>
+    <center>
+        <h1>Hello World</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, commodi?</p>
+        <p style="color: blue;">Lorem ipsum dolor sit amet <span style="color: brown;">consectetur</span> adipisicing elit. Praesentium, <u>autem!</u></p>
+    </center>
+    <P style="font-size: xx-large;">C<sub>2</sub>gin plus<br> emc<sup>2</sup></P>
+    <sup></sup>
+    <h2>Hello World</h2>
+    <h3>Hello World</h3>
+    <h4>Hello World</h4>
+    <h5>Hello World</h5>
+    <h6>Hello World</h6>
+    <div>  
+        <dl>
+            <dt>Description Term</dt>
+            <dd>Description Data</dd>
+        </dl>
+            
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>plants</th>
+                    <th>place</th>
+                    <th>quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>cactus</td>
+                    <td>dessert</td>
+                    <td rowspan="2">Many</td>
+                </tr>
+                    <td>cactus</td>
+                    <td colspan="1">dessert</td>
+                    
+                    
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr >
+                    <td  colspan="3" style="text-align:center ">footer</td>
+                    
+                </tr>
+            </tfoot>
+            <br>
+
+
+
+
+        </table>
+
+
+
+
+        <hr>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://img.freepik.com/free-photo/full-shot-woman-posing-romantic-garden_23-2150316918.jpg?w=360&t=st=1693486849~exp=1693487449~hmac=554dda746a56c2f9ad8fc73c778c75f6be01141acbfe39e45d584aac355e6cf3" alt="">
+    </div> 
+    <br>
+    <br>
+    <div>
+        <a href="https://www.youtube.com/" alt="link-to-googledocs" target="_blank">Click Me</a>
+        <a href="https://www.youtube.com/" alt="link-to-googledocs" target="_blank">Inline</a>
+        <a href="https://www.youtube.com/" alt="link-to-googledocs" target="_blank">Click Me</a>
+    </div>
+    <span><a href="https://www.youtube.com/" alt="link-to-googledocs" target="_blank">Click Me</a></span>
+    <section><a href="https://www.youtube.com/" alt="link-to-googledocs" target="_blank">Inline</a></section>
+    
+    <a href="https://www.youtube.com/" alt="link-to-googledocs" target="_blank">Click Me</a>
+    <section>
+    <ol type="i">
+        <li><a href="./Activity.html">Chapter 1</a></li>
+        <li>&lt;--Chapter 2---&gt;</li>
+        <li>chapter 3</li> 
+    </ol>
+    <ul>
+        <li>Chapter 1</li>
+        <li>Chapter 2</li>
+        <li>chapter 3</li> 
+    </ul>
+    </section>
+   
+</body>
+</html>
