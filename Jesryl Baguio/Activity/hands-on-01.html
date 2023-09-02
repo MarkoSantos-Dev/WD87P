@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HANDS-ON 01</title>
+  <style>
+    /* task #1&2*/
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: calibri;
+    }
+
+    .task1-2-header {
+      font-size: 35px;
+      font-family: sans-serif;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    
+    table {
+      text-align: center;
+      border-collapse: collapse;
+      margin: auto;
+      margin-top: 10px;
+      box-shadow: 0 0 10px;
+      padding-top: 20px;
+         
+    }
+    thead {      
+      background-color: rgb(0,154,125);
+      font-size: 25px;
+      text-align: center;
+    }
+
+    th {
+      text-align: center;
+      padding-top: 15px;
+      padding-bottom: 10px;
+      color: white;
+      }
+
+      td {
+        padding-top: 7px;
+        padding-bottom: 7px;
+        font-weight: bold;
+      }
+
+    thead, th, tr , td {
+      padding-left: 30px;
+      padding-right: 30px;
+      text-align: center;
+      }
+     .data {
+     background-color: rgb(214, 212, 212);
+     }
+
+     .image {
+      height: 35px;
+      width: 40px;
+     }
+
+     /* Task#3-css*/
+     section {
+      margin-top: 40px;
+      text-align: center;
+     }
+
+     .task3-header {
+      font-size: 30px;
+      font-family: sans-serif;
+     }
+     
+     li {
+      font-size: 25px;
+      font-family: sans-serif;
+      font-weight: bold;
+     }
+
+     /* Task#4-css */
+     .task4-header {
+      font-size: 30px;
+      font-family: sans-serif;
+      margin-top: 20px;
+     }
+
+     .l1 {
+      color: red;
+     }
+     .l2 {
+      color: blue;
+     }
+     .l3 {
+      color: green;
+     }
+     .l4 {
+      color: yellow;
+     }
+    .l5 {
+      color: gray;
+    }
+
+    /* Task#5-css */
+    .task5-header {
+      font-size: 30px;
+      font-family: sans-serif;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+    .header-main {
+      font-size: 35px;
+      display: inline-block;
+      padding-left: 5px;
+    }
+    .header-logo {
+      width: 30px;
+      display: inline-block;
+      padding-bottom: 0;
+      margin: 0;
+    }
+    nav {
+      font-size: larger;
+      font-weight: bold;
+      word-spacing: 5px;
+    }
+    .task5-p {
+      inline-size: 500px;
+      word-wrap: break-word;
+      margin-left: auto;
+      margin-right: auto;
+           
+      font-family: calibri;
+      font-size: larger;
+      font-family: arial;
+    }
+      footer {
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    /* task#6-css */
+    .task6-header {
+      font-size: 25px;
+      font-family: sans-serif;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    /* Task#7*-css */
+    .task7-header {
+      font-size: 25px;
+      font-family: sans-serif;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+  </style>
+  </head>
+<body>
+  <h5 class="task1-2-header">Task&#35;1&2. Tables with images</h5>
+  <!-- Task #1&#2 -->
+  <table>
+
+    <thead>
+      <th>FIRST NAME</th>
+      <th>LAST NAME</th>
+      <th>ADDRESS</th>
+      <th>CITY</th>
+      <th>AGE</th>
+      <th class="image">IMAGE</th>
+
+    </thead>
+    <tr>
+      <td>Mickey</td>
+      <td>Mouse</td>
+      <td>123 Fastasy Way</td>
+      <td>Anaheim</td>
+      <td>73</td>
+      <td>
+        <img class="image" src="images/mickey-mouse.png" alt="">
+      </td>
+     
+      </td>
+      </tr>
+    <tr class="data">
+      <td>Bat</td>
+      <td>Man</td>
+      <td>321 Cavern Ave</td>
+      <td>Gotham</td>
+      <td>54</td>
+      <td>
+        <img class="image" src="images/batman.png" alt="">
+      </td>
+    </tr>
+    <tr>
+      <td>Wonder</td>
+      <td>Woman</td>
+      <td>987 Truth Way</td>
+      <td>Paradise</td>
+      <td>39</td>
+      <td>
+        <img class="image" src="images/wonder-woman.png" alt="">
+      </td>
+    </tr>
+    <tr class="data">
+      <td >Donald</td>
+      <td>Duck</td>
+      <td>555 Quack Stree</td>
+      <td>Mallard</td>
+      <td>65</td>
+      <td>
+        <img class="image" src="images/donal-duck.png" alt="">
+      </td>
+    </tr>
+    <tr>
+      <td>Bugs</td>
+      <td>Bunny</td>
+      <td>567 Carrot Stree</td>
+      <td>Rascal</td>
+      <td>58</td>
+      <td>
+        <img class="image" src="images/bugs-bunny.png" alt="">
+      </td>
+    </tr>
+    <tr class="data">
+      <td>Wiley</td>
+      <td>Coyote</td>
+      <td>999 Acme Way</td>
+      <td>Canyon</td>
+      <td>61</td>
+      <td>
+        <img class="image" src="images/wiley-coyote.png" alt="">
+      </td>
+    </tr>
+    <tr>
+      <td>Cat</td>
+      <td>Woman</td>
+      <td>234 Purrfect Street</td>
+      <td>Hairball</td>
+      <td>61</td>
+      <td>
+        <img class="image" src="images/cat-woman.png" alt="">
+      </td>
+    </tr>
+    <tr class="data">
+      <td>Tweety</td>
+      <td>Bird</td>
+      <td>543</td>
+      <td>Itotlaw</td>
+      <td>28</td>
+      <td>
+        <img class="image" src="images/tweety-bird.png" alt="">
+      </td>
+    </tr>
+  </table>
+
+  <section>
+  <!-- Task #3 -->
+    <h3 class="task3-header">Task&#35;3. Top 3 Favorite Restaurant</h3>
+    <ol>
+      <li>
+        <a href="https://www.vikings.ph/" target="_blank">Vikings</a>
+      </li>
+      <li>
+        <a href="https://www.bk.com/" target="_blank">Burder King</a>
+      </li>
+      <li>
+        <a href="https://sugbo.ph/2019/house-of-lechon-capitol/" target="_blank">House of Lechon</a>
+      </li>
+     </ol>
+
+     <!-- Task #4 -->
+     <h4 class="task4-header">Task&#35;4. Unordered list of 5 colors</h4>
+      <ul>
+        <li class="l1">Red</li>
+        <li class="l2">Blue</li>
+        <li class="l3">Green</li>
+        <li class="l4">Yellow</li>
+        <li class="l5">Gray</li>
+      </ul>
+     <!-- task #5 -->
+     <h5 class="task5-header">Task&#35;5. Article with content</h5>
+      
+     <header>
+        <img class="header-logo" src="images/kodego-logo.png" alt="">
+        <h2 class="header-main">KodeGo</h2>
+      </header>
+      <nav> 
+        <a href="https://kodego.ph/#about-us" target="_blank">About</a>
+        <a href="https://kodego.ph/courses" target="_blank">Courses</a>
+        <a href="https://kodego.ph/careers" target="_blank">Careers</a>
+      </nav>
+
+      <section>
+        <p class="task5-p">KodeGo offers full-time online IT courses with a study-now-pay-later setup, while providing end-to-end career assistance and suport for our students after the bootcamp.</p>
+      </section>
+
+      <footer>
+        <h3>Contacts</h3>
+          <p>18th Floor, W Fifth, 5th Avenue, Taguig, 1630 Metro Manila</p>
+          <a href="mailto:your-email@example.com">help@kodego.ph</a>
+      </footer>
+
+      <h5 class="task6-header">Task&#35;6. Embed your favorite music video in your website</h5>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/f02mOEt11OQ?si=-ZJ6y5HWkeVjxDcB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+      <h5 class="task7-header">Task&#35;7. Embed Google Map and set location to your favorite Hangout place.</h5>
+      <iframe src="https://www.google.com/maps/d/embed?mid=1hpk402Cymfci2D-JYW6thuiIWg8&hl=en_US&ehbc=2E312F" width="640" height="480"></iframe>
+
+      </section>
+  </body>
+</html>
