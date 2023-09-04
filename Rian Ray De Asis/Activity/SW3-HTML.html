@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SW3-HTML</title>
+</head>
+<Style>
+        form {
+            border: 1px solid black;
+            width: 30%;
+            background-color: #60a0ff;
+            margin-left: auto;
+            margin-right: auto;
+            width: fit-content;
+            padding-top: 3px;
+            padding-bottom: 13px;
+            padding-inline: 30px;
+        }
+        .font {
+            text-align: center;
+            font-family: 'Gill sans',sans-serif;
+        }
+</Style>
+<body>
+    <h1 class="font">Race Registration!</h1>
+<form style="display:block; margin-inline: center;" action="action_page.php" method="post">  
+        <p>
+            <label for="firstname">First Name</label>
+            <input id="firstname" type="text" placeholder="firstname" id="First Name" name="lastname" required>
+            <label for="lastname">Last Name</label>
+            <input type="lastname" placeholder="lastname" id="Last Name" name="lastname" required>
+        </p>
+        <p>
+        </p>
+        <p>
+        <p>Select Race:</p>
+                <input type="radio" name="select" id="funrun5k" value="funrun5k" Required>
+                    <label for="funrun5k">Fun Run 5k</label><br>
+                <input type="radio" name="select" id="Half Marathon" value="Half Marathon" Required>
+                    <label for="Half Marathon">Half Marathon</label><br>
+                <input type="radio" name="select" id="Full Marathon" value="Full Marathon" Required>
+                    <label for="Full Marathon">Full Marathon</label>
+        <br>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="email" required>
+            <label for="password">Password</label>
+            <input type="password" name="user_password" id="password" placeholder="password" required>
+        <br>
+            <label for="selectagegroup">Select Age Group</label>
+                <select name="group" id="group" Required>
+                    <option value="under18">under 18</option>
+                    <option value="over18">over 18</option>
+                    <option value="Senior">Senior</option>
+                </select><br>
+                <button>Register</button>
+        </p>
+     </form> 
+</body>
+</html>
