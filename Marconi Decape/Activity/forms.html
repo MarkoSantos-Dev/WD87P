@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms.html</title>
+    <style>
+      form {
+        background-image: url(Images/pngtree-colorful-running-poster-background-material-image_156604.jpg);
+        border: 2px solid black;
+        width: 40%;
+        padding: 10px;
+        background-color: rgb(101, 101, 247);
+        margin: 0 auto;
+        border-radius: 5px;
+      }
+      h1 {
+        text-align: center;
+      }
+      input,
+      select {
+        border-radius: 2px;
+      }
+      body {
+        background-color: dimgrey;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Race Registration!</h1>
+    <form action="submit_form.php" method="POST">
+      <label for="first-name">First Name</label>
+      <input type="text" name="first-name " id="first-name" />
+      <label for="last-name">Last Name</label>
+      <input type="text" name="last-name" id="last-name" />
+      <p>Select Race</p>
+
+      <input
+        type="radio"
+        name="race_category"
+        id="Fun Run 5k"
+        value="Fun Run 5k"
+      />
+      <label for="Fun Run 5K">Fun Run 5k</label>
+      <br />
+
+      <input
+        type="radio"
+        name="race_category"
+        id=" Half Marathon"
+        value="Half Marathon"
+      />
+      <label for="Half Marathon">Half Marathon</label>
+      <br />
+
+      <input
+        type="radio"
+        name="race_category"
+        id="Full Marathon"
+        value="Full Marathon"
+      />
+      <label for="Full Marathon">Full Marathon</label>
+      <br />
+
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" />
+      <label for="password">Password</label>
+      <input type="password" name="user-password" id="password" />
+      <br />
+
+      <label for="age group"> Select Age Group</label>
+      <select name="Age" id="Age">
+        <option value="18">18 yrs old</option>
+        <option value="20">20 yrs old</option>
+        <option value="30">30 yrs old</option>
+      </select>
+      <br />
+
+      <input type="submit" name="submit" id="submit" value="Submit" />
+    </form>
+  </body>
+</html>
