@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            background-color: rgb(107, 107, 209);
+            border: 1px solid rgb(0, 0, 0);
+            width: 50%;
+            margin-left: 25%;
+            margin-top: 5%;
+        }
+    </style>
+</head>
+<body>
+   <h2 style="text-align: center;">Race Registration!</h2>
+<form action="">
+   <p>
+    <label for="first-name">First Name</label>
+    <input type="text" name="first-name"id="first-name" minlength="5" maxlength="10" required>
+    <label for="last-name">Last Name</label>
+    <input type="text" name="last-name" id="flast-name" minlength="5" maxlength="25" required>
+   </p>
+    <p>
+        Select a Race
+    </p>
+    <p>
+        <input type="radio" name="Race" id="Fun Run 5k" value="Fun Run 5k">
+        <label for="Fun Run 5k">Fun Run 5k</label><br>
+        <input type="radio" name="Race" id="Half Marathon" value="Half Marathon">
+        <label for="Half Marathon">Half Marathon</label><br>
+        <input type="radio" name="Race" id="Full Marathon" value="Full Marathon">
+        <label for="Full Marathon">Full Marathon</label>
+    </p>
+    <p>
+        <label for="Email">Email</label>
+        <input type="text" name="Email"id="Email" minlength="8" maxlength="30" required>
+        <label for="Password">Password</label>
+        <input type="text" name="Password" id="Password" minlength="8" maxlength="25" required>
+    </p>
+    <p> 
+        Select Age Group
+        <select name="Age" id="Age">
+        <option value="Under 18">Under 18</option>
+        <option value="Above 18">Above 18</option>
+        </select>
+    </p>
+    <p>
+        <button>Submit</button>
+    </p>
+</form>
+</body>
+</html>
