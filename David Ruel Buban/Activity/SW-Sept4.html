@@ -20,11 +20,12 @@
 <body>
     <h1>Race Registration!</h1>
     <form action="/BIG-SMILE/">
+         <!-- I added a required attribute with a pattern that allows both uppercase and lowercase while disallowing special characters. (required pattern="^[a-zA-Z ]+$)-->
         <p>
             <label for="First Name">First Name:</label>
-            <input id="First Name "type="text">
+            <input id="First Name "type="text" required pattern="^[a-zA-Z ]+$">
             <label for="Last Name">Last Name:</label>
-            <input id="Last Name"type="text">
+            <input id="Last Name"type="text" required pattern="[a-zA-Z ]+$">
         </p>
     <p>Select a Race:</p>
             <p>
@@ -36,11 +37,12 @@
                 <label for="Full Marathon">Full Marathon</label>
             </p>   
 
+            <!-- In a similar manner, except for one key difference, this regular expression consists of three parts. The first part, [a-zA-Z0-9], allows one or more alphanumeric characters, encompassing both uppercase and lowercase letters and digits before the '@' symbol. The second part, also [a-zA-Z0-9], pertains to the characters that come after the '@'. Lastly, the third part, [a-zA-Z]{2,8}, specifies that the top-level domain (TLD) can comprise between two and eight letters. -->
     </p>
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="password">Password:</label>
-            <input type="password" name="user_password" id="password" minlength="5" maxlength="20" required> 
+            <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z]{2,8}">
+            <label for="pwd">Password:</label>
+            <input type="Password" name="pwd" id="pwd" minlength="5" maxlength="20" required> 
 
         </p>
 <p>
