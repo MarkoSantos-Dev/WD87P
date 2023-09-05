@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms | Race Registration</title>
+    <style>
+        h1{
+            text-align: center;
+            margin-top: 80px;
+        }
+
+        form{
+            border: 1px solid black;
+            width: 600px;
+            margin: 0 auto;
+            margin-top: 20px;
+            background-color: #689cfc;
+        }
+
+        #form-elements{
+            width: 500px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Race Registration!</h1>
+    <form action="/test" method="get">
+        <section id="form-elements">
+            <p>
+                <label for="first-name">First Name</label>
+                <input type="text" name="first-name" id="first-name">
+                <label for="last-name">Last Name</label>
+                <input type="last-name" name="last-name" id="last-name">
+            </p>
+            <p>Select a Race:</p>
+                <input type="radio" name="race-options" value="fun-run-5k" id="fun-run">    
+                <label for="fun-run">Fun Run 5k</label>
+                <br>
+                <input type="radio" name="race-options" value="half-marathon" id="half-marathon">
+                <label for="half-marathon">Half Marathon</label>
+                <br>
+                <input type="radio" name="race-options" value="full-marathon" id="full-marathon">
+                <label for="full-marathon">Full Marathon</label>
+            <p>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+            </p>
+            <p style="display: inline;">Select Age Group</p>
+                <select name="age-group" id="age-group">
+                    <option value="under-18">Under 18</option>
+                    <option value="18-to-24-years-old">18 to 24 yrs old</option>
+                    <option value="25-and-above">25 yrs old and above</option>
+                </select>
+            <p>
+                <input type="submit" name="submit" id="submit" value="Register">
+            </p>
+        </section>
+    </form>
+</body>
+</html>
