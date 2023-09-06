@@ -30,27 +30,27 @@
         <section id="form-elements">
             <p>
                 <label for="first-name">First Name</label>
-                <input type="text" name="first-name" id="first-name">
+                <input type="text" name="first-name" id="first-name" required>
                 <label for="last-name">Last Name</label>
-                <input type="last-name" name="last-name" id="last-name">
+                <input type="last-name" name="last-name" id="last-name" required>
             </p>
             <p>Select a Race:</p>
-                <input type="radio" name="race-options" value="fun-run-5k" id="fun-run">    
+                <input type="radio" name="race-options" value="fun-run-5k" id="fun-run" required>    
                 <label for="fun-run">Fun Run 5k</label>
                 <br>
-                <input type="radio" name="race-options" value="half-marathon" id="half-marathon">
+                <input type="radio" name="race-options" value="half-marathon" id="half-marathon" required>
                 <label for="half-marathon">Half Marathon</label>
                 <br>
-                <input type="radio" name="race-options" value="full-marathon" id="full-marathon">
+                <input type="radio" name="race-options" value="full-marathon" id="full-marathon" required>
                 <label for="full-marathon">Full Marathon</label>
             <p>
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email">
+                <input type="email" name="email" id="email" required>
                 <label for="password">Password</label>
-                <input type="password" name="password" id="password">
+                <input type="password" name="password" id="password" required>
             </p>
             <p style="display: inline;">Select Age Group</p>
-                <select name="age-group" id="age-group">
+                <select name="age-group" id="age-group" required>
                     <option value="under-18">Under 18</option>
                     <option value="18-to-24-years-old">18 to 24 yrs old</option>
                     <option value="25-and-above">25 yrs old and above</option>
