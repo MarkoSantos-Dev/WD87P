@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Poppins:wght@700;900&family=Roboto:wght@900&family=Spline+Sans:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: "Spline Sans", sans-serif;
+    color: #777;
+    line-height: 1.7;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 600;
+    color: #222;
+}
+
+a {
+    color:#222;
+    text-decoration: none;
+    transition: all 0.4s;
+    font-weight: 600;
+}
+
+a:hover {
+    color: #F58d17;
+}
+
+img {
+    width: 100%;
+}
+
+section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.shadow-on-hover {
+    transition: all 0.2s;
+}
+
+.shadow-on-hover {
+    box-shadow: 0 10px 40px black;
+}
+
+/* Btn */
+.btn {
+    border: 0;
+    padding: 14px 38px
+}
+
+.btn-brand {
+    color: #fff;
+    font-weight: 500;
+    border-color: #F58d17;
+    background-color: #F58d17;
+}
+
+.btn-brand:hover {
+    border-color: #cf7713;
+    background-color: #cf7713;
+    color: #fff
+}
+
+.bg-cover {
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+/* Slider */
+.slide-1 {
+    background: linear-gradient(#00000005, #00000005), url(image/b21.jpg)
+}
+
+.slide-2 {
+    background: linear-gradient(#00000005, #00000005), url(image/b10.jpg)
+}
+
+#heroSlider h6::after,
+#heroSlider h6::before {
+    content: " ";
+    width: 40px;
+    height: 4px;
+    background-color: #fff;
+    display: inline-block;
+    margin: 10px;
+    vertical-align: middle
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: (#00000005);
+    width: 40px;
+    height: 70px;
+    margin: auto;
+}
+
+/* About*/
+#about .divider {
+    width: 60px;
+    height: 2px;
+    display: block;
+    background-color: #F58d17;
+
+}
+
+/* Intro*/
+.intro-text {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.intro-text p {
+    max-width: 500px;
+    margin: 16px auto 0 auto;
+}
+
+/* Menu */
+#menu .nav-pills .nav-link {
+    background-color: #fff;
+    margin-left: 8px;
+    margin-right: 8px;
+    color: #222;
+    border-radius: 100px;
+    box-shadow: 0 10px 40px #00000001;
+}
+
+#menu .nav-pills .nav-link.active {
+    background-color: #F58d17;
+    color: #fff;
+}
+
+.menu-item .stars {
+    color: #F58d17
+}
+
+/* Features */
+#features {
+    background: linear-gradient(#00000005, #00000005), url(./image/b19.jpg);
+}
+
+.feature {
+    border: 2px solid #7a6363;
+}
+
+.feature .feature-icon {
+    width: 80px;
+    height: 80px;
+    background-color: #eb8430;
+    color:#0f0909;
+    font-size: 28px;
+    display: inline-grid;
+    align-content: center;
+    text-align: center;
+}
