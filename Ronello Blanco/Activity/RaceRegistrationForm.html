@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            border: 1px solid black;
+            width: 26%;
+            background-color: hwb(202 7% 3%);
+            padding: 15px;
+            margin-left:36%;
+            }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Race Registration!</h1>
+    <form action="RaceRegistration">
+        <label for="name">First Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="name">Last Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <br>
+        
+        <label for="Select a Race">Select a Race:</label>
+        <br>
+        <br>
+        <input type="radio" name="radio" id="5k" required>
+        <label for="radio">Fun Run 5k</label>
+        <br>
+        <input type="radio" name="radio" id="10k" required>
+        <label for="radio">Half Marathon</label>
+        <br>
+        <input type="radio" name="radio" id="Full Marathon" required>
+        <label for="radio">Full Marathon</label>
+        <br>
+        <label for="email">Email:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="pas" required>
+        <br>
+        <label for="category">Select Age Group:</label>
+        <select id="category" name="category" required>
+            <option value="Under 18">Under 18</option>
+            <option value="10k">Under 25</option>
+            <option value="marathon">Under 35</option>
+        </select>
+        <br>
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
