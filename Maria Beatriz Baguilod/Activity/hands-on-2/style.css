@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #0ea3ac;
+    height: 150px;
+    width: 100%;
+}
+
+.header-img{
+    width: 200px;
+    height: 150px;
+    display: block;
+    margin: 0 auto;
+}
+
+aside{
+    background-color:rgb(232, 227, 227);
+    width: 13%;
+    height: 1000px;
+    font-family: sans-serif;
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+section{
+    width: 80%;
+    display: inline-block;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: sans-serif;
+}
+
+.left{  
+    display: inline-block;
+    width: 20%;
+    vertical-align: top;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.right{
+    width: 70%;
+    display: inline-block;
+}
+
+table{ 
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 15px;
+    border-collapse: collapse;
+    margin-top: 75px;
+}
+
+thead{
+    background-color: #0ea3ac;
+    color: rgb(245, 238, 238);
+}
+
+th, tr, td{
+    width: 23%;
+    padding: 8px;
+}
+
+.gray-color{
+    background-color:rgba(243,243,243,255);
+} 
+
+td.align-left{
+    text-align:left;
+    padding-left: 5px;
+}
+
+th.align-left{
+    text-align:left;
+}
+
+.one, .two, .three{
+    width: 100vh;
+    margin: 70px;
+    border-top: solid rgb(241, 236, 236) 1px;
+    border-bottom: solid rgb(241, 236, 236) 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+footer{
+    font-family: sans-serif;
+    background-color: #f8f4f4;
+    width: 99%;
+    height: 70px;
+    margin: 0 auto;
+    padding: 15px;
+    text-align: center;
+}
