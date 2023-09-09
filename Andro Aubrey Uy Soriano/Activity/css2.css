@@ -1,0 +1,108 @@
+header, footer{
+    height: 5rem;
+    width: 100%;
+    border: 1px solid black;
+}
+footer{
+    margin-top: 10px;
+}
+
+aside{
+    border: 1px solid black;
+    width: 20vh;
+    height: 66vh;
+    margin-top: 10px;
+}
+ul {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    width: 20vw;
+    height: 78vh;
+    list-style-type: none;
+  }
+  nav{
+      
+      padding: 1.5rem;
+      background-color: grey;
+      height: 50vh;
+      width: 7vw;
+      
+  }
+  a {
+      text-decoration: none;
+      color: aliceblue;
+      display: block;
+      text-align: left;
+  }
+  .navbar {
+      font-size: 18px;
+      float: left;
+      display: block;
+      
+                         
+  }
+  .navbar a:hover {
+    background-color: whitesmoke;
+  
+  }
+.parent-main{
+    display: flex 
+}
+.parent-sections{
+    border: 1px solid black;
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+.upper-section{
+    display: flex;
+}
+.lower-section{
+    border: 1px solid black;
+}
+.upper-section,.lower-section{
+    
+    width: 98%;
+    height: 32vh;
+    margin: 2px;
+}
+.lower-div {
+    border: 1px solid black;
+    width: 98%;
+    height: 9vh;
+    margin: 5px;
+}
+.container-img{
+    border: 1px solid black;
+    width: 35%;
+    margin: 2px;
+}
+.container-table{
+    border: 1px solid black;
+    width: 75%;
+    margin: 2px;
+}
+.upper-img{
+    border: 1px solid black;
+    height: 5rem;
+    margin: 2px;
+}
+.img-div{
+    display: flex;
+    flex-direction: column;
+    margin: 1px;
+    margin-left: 5px;
+    
+}
+img{
+    border: 1px solid black;
+    height: 3rem;
+    width: 3rem;
+}
+.img-bottom{
+    align-self: flex-end;
+    margin-right: 5px;
+}
