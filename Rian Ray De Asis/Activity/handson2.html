@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hands On 2</title>
+</head>
+
+<style>
+    .page-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 98vh;
+        border: 1px solid rgb(0, 0, 0);
+        color: white;
+    }
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 10%;
+        /* border: 2px solid darkorange; */
+        background-color: #0D1F2D;
+    }
+    .contentone {
+        display: flex;
+        flex-direction: row;
+        height: 80%;
+        border: 1px solid rgb(10, 10, 10); 
+    }
+    .nav-left {
+        display: flex;
+        width: 30%;
+        /* border: 4px solid darkorange; */
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        background-color: #9EA3B0;
+    }
+    .contenttwo {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        /* height: 100%; */
+        background-color: #002649;
+        /* border: 4px solid rgb(8, 97, 0);  */
+    }
+    .article-top {
+        height: 50%;
+        background-image: linear-gradient(180deg, #546A7B, #fff);
+        /* border: 4px solid rgb(0, 74, 97); */
+    }
+    .article-bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        height: 50%;
+        /* border: 4px solid rgb(0, 74, 97); */
+        color: darkslategrey;
+        background-color: #ffffff;
+        padding: 20px;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        transition: 0.5s ease-in;
+        transition: 0.13s ease-out;
+    }
+    .box-top {
+        display: flex;
+        width: 90%;
+        height: 90px;
+        /* border: 4px solid rgb(0, 145, 189); */
+        border-radius: 10px;
+        box-shadow:  -5px 5px 10px #d8d8d8, 5px -5px 10px #ffffff;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        transition: 0.5s ease-in;
+        transition: 0.13s ease-out;
+        cursor:pointer;
+    }
+/*   box hover for box top   */
+        .box-top:hover {
+            border: 1px solid black;
+            transform: scale(1.05);
+        }
+
+        .box-top:active {
+            transform: scale(0.95) rotateZ(0.7deg);
+        }
+/*   box hover for box bot   */ 
+    .box-mid {
+        display: flex;
+        width: 90%;
+        height: 90px;
+        /* border: 4px solid rgb(0, 145, 189); */
+        border-radius: 10px;
+        box-shadow:  -5px 5px 10px #d8d8d8, 5px -5px 10px #ffffff;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        transition: 0.5s ease-in;
+        transition: 0.13s ease-out;
+        cursor:pointer;
+    }
+/*   box hover for box mid   */
+        .box-mid:hover {
+            border: 1px solid black;
+            transform: scale(1.05);
+        }
+
+        .box-mid:active {
+            transform: scale(0.95) rotateZ(0.7deg);
+        }
+/*   box hover for box bot   */   
+    .box-bot, #card-button {
+        display: flex;
+        width: 90%;
+        height: 90px;
+        /* border: 4px solid rgb(0, 145, 189); */
+        border-radius: 10px;
+        box-shadow:  -5px 5px 10px #d8d8d8, 5px -5px 10px #ffffff;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        transition: 0.5s ease-in;
+        transition: 0.13s ease-out;
+        cursor:pointer;
+    }
+/*   box hover for box bot   */
+        .box-bot:hover , #card-button:hover {
+            border: 1px solid black;
+            transform: scale(1.05);
+        }
+
+        .box-bot:active , #card-button:active {
+            transform: scale(0.95) rotateZ(0.7deg);
+        }
+/*   box hover for box bot   */
+    .footer {
+        height: 10%;
+        background-color: rgb(0, 38, 73);
+        /* border: 2px solid darkorange; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .article-top {
+        display: flex;
+        /* border: 2px solid rgb(165, 0, 180); */
+    }
+    .articletop-left {
+        flex-direction: column;
+        height: 50%;
+        /* border: 2px solid rgb(0, 18, 180); */
+    }
+    .articletop-lefttop {
+        padding: 20px;
+        display: flex;
+        width: auto;
+        height: 50%;
+        /* border: 2px solid rgb(0, 18, 180); */
+    }
+    .articletop-leftbottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; 
+        /* border: 2px solid rgb(116, 116, 116);     */
+        padding: 10px;
+    }
+    #sasuke {   
+        align-self: flex-end;
+        width: 80px;
+        height: 80px;
+        border-radius: 8px;
+    }
+    #naruto {  
+        width: 80px;
+        height: 80px; 
+        border-radius: 8px;
+
+    }
+    /* .boxing{      
+    } */
+    .top-container {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        /* border: 2px solid rgb(99, 255, 125);   */
+    }
+    .table {
+        display: flex;
+        width: 70%;
+        /* border: 2px solid rgb(116, 116, 116); */
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    /* .articletop-right {
+        height: 50%;
+        border: 2px solid rgb(0, 18, 180);       
+    } */
+    table {
+        border: 1px solid black;
+        width: 90%;
+        Border-collapse: collapse;
+        font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    }
+    tr, td, th {
+        width: 23%;
+        padding: 12px;
+    }
+    .center1 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .tcolor {
+        background-color: lightgrey;
+    }
+    .box-article {
+        /* position: relative; */
+        /* width: 350px; */
+        aspect-ratio: 16/9;
+        background-color: #f2f2f2;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        /* perspective: 1000px; */
+        box-shadow: 0 0 0 5px #ffffff80;
+        transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        padding-inline: 20px;
+    }
+    .box-article #picture {
+        /* width: 48px; */
+        fill: #333;
+        transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    #picture {
+        color: #9EA3B0;
+        font-family: 'poppins',sans-serif;
+        font-size: 40px;
+        font-weight: 1000;
+        text-align: center;
+        /* width: 70px;
+        height: 70px; */
+    }
+    .box-article__image {
+        width: 100%;
+        height: 100%;
+    }
+    .box-article:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+    }
+    .box-article__content {
+        display:flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        align-items: center;
+        box-sizing: border-box;
+        background-color: #fff;
+        transform: rotateX(-90deg);
+        transform-origin: bottom;
+        transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        
+    }
+    .box-article:hover .box-article__content {
+        transform: rotateX(0deg);
+    }
+    .box-article__title {
+        font-family: 'Gill sans',sans-serif;
+        font-size: 40px;
+        margin: 0;
+        font-size: 20px;
+        color: #333;
+        font-weight: 700;
+        text-align: center;
+        
+    }
+    .box-article:hover svg {
+        scale: 0;
+    }
+    .box-article__description {
+        font-family: 'Gill sans',sans-serif;
+        font-size: 40px;
+        margin: 10px 0 10px;
+        font-size: 12px;
+        color: #777;
+        line-height: 1.4;
+        text-align: center;
+    }
+    .box-article__button {
+        border-radius: 8px;
+        background: #777;
+        border: none;
+        color: white;
+    }
+    #card-button {
+        margin-top: 10px;
+        width: 180px;
+        height: 50px;
+    }
+
+</style>
+
+<body>
+
+    <div class="page-container">
+        <header class="header">
+           <h1>HEADER</h1>
+        </header>
+    <div class="contentone">
+
+        <nav class="nav-left">
+            <a href="#"><p>LINK</p></a>
+            <a href="#"><p>LINK</p></a>
+            <a href="#"><p>LINK</p></a>
+        </nav>
+
+        <div class="contenttwo">
+            <div class="article-top">
+                <div class="top-container">
+                    <div class="articletop-lefttop">
+                        <div class="box-article">
+                            <!-- <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path></svg> -->
+                            <div id="picture"><p>HOVER HERE</p></div>
+                            <div class="box-article__content">
+                              <p class="box-article__title">Hands On 1</p>
+                              <p class="box-article__description">Hello po! Try ko lang o ito.</p>
+                              <button class="box-article__button" href="#" id="card-button">Thank You!</button>
+                            </div>
+                          </div>
+                    </div>
+
+                    <div class="articletop-leftbottom">
+                        <img src="https://i.pinimg.com/474x/47/21/80/4721805955b037c76607987010f6d46a.jpg" alt="naruto" id="naruto">
+                        <img src="https://i.pinimg.com/474x/be/e4/0e/bee40e7e4e24627818855075ba1042b6.jpg" alt="sasuke" id="sasuke">
+                    </div>
+
+                </div>
+                <div class="table">
+                    <table>
+                        <table style="text-align: center;" class="center1">
+                            <thead style=" background-color: #089c7c;">
+                                <th style="color: whitesmoke;">First Name</th>
+                                <th style="color: whitesmoke;">last Name</th>
+                                <th style="color: whitesmoke;">Address</th>
+                                <th style="color: whitesmoke;">City</th>
+                                <th style="color: whitesmoke;">Age</th>
+                            </thead>
+                        </thead>
+                        <tbody>
+                            <tr style="background-color: white;color: black">
+                                <td>Mikey</td>
+                                <td>Mouse</td>
+                                <td>123 Fantasy Way</td>
+                                <td>ahaheim</td>
+                                <td>73</td>
+                            </tr>
+                            <tr class="tcolor" style="color: black;">
+                                <td>Bat</td>
+                                <td>Man</td>
+                                <td>321 Cavern Ave</td>
+                                <td>Gotham</td>
+                                <td>54</td>
+                            </tr>
+                            <tr style="background-color: white;color: black">
+                                <td>Wonder</td>
+                                <td>Woman</td>
+                                <td>987 Truth Way</td>
+                                <td>Paradise</td>
+                                <td>39</td>
+                            </tr>
+                            <tr class="tcolor" style="color: black;">
+                                <td>Donald</td>
+                                <td>Duck</td>
+                                <td>555 Quack Street</td>
+                                <td>Mallard</td>
+                                <td>65</td>
+                            </tr>
+                        </tbody>
+                        </table>
+                </div>
+            </div>
+            <!-- <div class="boxing">
+            </div> -->
+            <div>
+                <div class="articletop-right"></div>
+            </div>
+
+            <div class="article-bottom"> 
+                <div class="box-top">
+                    <h2 style="font-family: 'gill sans',sans-serif;">BOX ONE</h2>
+                </div>
+                <div class="box-mid">
+                    <h2 style="font-family: 'gill sans',sans-serif;">BOX TWO</h2>
+                </div>
+                <div class="box-bot">
+                    <h2 style="font-family: 'gill sans',sans-serif;">BOX THREE</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <h1 style="color:white">FOOTER</h1>
+        <p>	&copy; Hands on 1 - by Rian Ray </p>
+    </footer>
+    </div>
+
+</body>
+</html>
