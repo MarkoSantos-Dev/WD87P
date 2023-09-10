@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #1dbb9c;
+    color: white;
+    font-size: 25px;
+    height: 100px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+main{
+    height: 580px;
+    display: flex;
+}
+
+form {
+    width: 900px;
+    padding: 80px;
+    margin: 100px;
+    background-color: #f0ffff;
+    box-shadow: 3px 3px 5px #cacaca;
+    color: #1dbb9c; 
+}
+
+.top{
+    display: flex;
+}
+
+.left {
+    display:flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
+
+.left-input {
+    float: right;
+    width: 200px;
+}
+
+.left > p {
+    padding: 5px;
+}
+
+.right {
+    width: 200px;
+}
+
+.right > p {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.bottom {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; 
+}
+
+input[type="submit"] {
+    padding: 10px;
+    background-color: #1dbb9c;
+    color: white;
+    border: transparent;
+    box-shadow: 2px 2px 2px #cecece;
+}
+
+input[type="submit"]:hover {
+    background-color: white;
+    color: #1dbb9c;
+}
+
+aside{
+    background-color: #20e4be;
+    color: white;
+    height: 580px;
+    width: 330px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+nav{
+    background-color:#1cb5bc;
+    color: white;
+    height: 580px;
+    width: 330px;
+    padding-left: 10px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+nav > p {
+    margin-top: 25px;
+}
+
+a{
+    margin-top: 5px;
+    width: 10rem;
+}
+
+a:hover{
+    color: white;
+}
+
+footer{
+    background-color: #1dbb9c;
+    color: white;
+    font-size: 25px;
+    height: 103px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
