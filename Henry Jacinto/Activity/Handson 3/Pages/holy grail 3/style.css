@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    border-collapse: collapse;
+    font-size:x-large;
+}
+.container1{
+    display: flex;
+}
+.container2{
+    border: 1px transparent;
+    height: 500px;
+    width: 100vh;
+    margin-top: 95px;
+    margin-left: 200px;
+    display: flex;
+    background-color: rgb(208, 179, 203);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.form1{
+    text-align: left;
+    border: 1px transparent;
+    height: 94%;
+    width: 50vh;
+    text-align: left;
+    padding: 10px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+.form2{   
+    text-align: left;
+    border: transparent;
+    height: 94%;
+    width: 50vh;
+    text-align: left;
+    padding: 10px;
+    padding-top: 20px;
+    
+    
+}
+#box{
+    display: flex;
+    background-color: rgb(202, 230, 161);
+}
+header{
+    border: 1px transparent;
+    height: 150px;
+    width: 100%;
+    background-color: rgb(37, 33, 33);
+    text-align: left;
+    color: white;
+}
+article{
+    border: 1px transparent;
+    height: 692px;
+    width: 145vh;
+    text-align: left;
+    background-color: rgb(255, 204, 0);
+}
+aside{
+    border: 1px transparent;
+    height: 692px;
+    width: 233px;
+    background-color:rgb(89, 78, 78);
+    text-align: left;
+    color: white;
+}
+nav{
+    border: 1px transparent;
+    height: 692px;
+    width: 232px;
+    background-color:rgb(236, 135, 63);
+    text-align: left;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+footer{
+    border: 1px transparent;
+    height: 120px;
+    width: 100%;
+    background-color: rgb(37, 33, 33);
+    text-align: left;
+    color: white;
+}
+button{
+    background-color: rgb(255, 204, 0);
+    border-radius: 5px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
