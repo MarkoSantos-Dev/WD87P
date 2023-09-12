@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(126, 77, 126);
+        }
+        header{
+            background-color: rgb(143, 113, 172);
+            height: 5rem;
+            width: 100%;
+            border: 1px solid black;
+        }
+        footer{
+            background-color: rgb(143, 113, 172);
+            height: 5rem;
+            width: 100%;
+            border: 1px solid black;
+            margin-top: 10px;
+            text-align: center;
+        }
+        aside{
+            background-color: rgb(143, 113, 172);
+            border: 1px solid black;
+            width: 20vh;
+            height: 66vh;
+            margin-top: 10px;
+        }
+        .parent-main{
+            display: flex;
+            flex-direction: row;
+        }
+        .parent-sections{
+            background-color: rgb(143, 113, 172);
+            border: 1px solid black;
+            width: 120%;
+            margin-top: 10px;
+            margin-left: 5px;
+        }
+        .upper-section{ 
+            background-color: rgb(127, 121, 133);
+            display: flex;
+            flex-direction: row; 
+        }
+        .lower-section{
+            background-color: rgb(127, 121, 133); 
+            border: 1px solid black;
+        }
+        .upper-section,.lower-section{
+            
+            width: 98%;
+            height: 32vh;
+            margin: 2px;
+        }
+        .lower-div {
+            background-color: rgb(98, 83, 114);
+            border: 1px solid black;
+            width: 98%;
+            height: 9vh;
+            margin: 10px;
+        }
+        .container-img{
+            border: 1px solid black;
+            width: 35%;
+            margin: 2px;
+        }
+        .container-table{
+            border: 1px solid black;
+            width: 75%;
+            margin: 2px;
+        }
+        .upper-img{
+            border: 1px solid black;
+            height: 5rem;
+            margin: 2px;
+        }
+        .img-div{
+            display: flex;
+            flex-direction: column;
+            margin: 1px;
+            margin-left: 5px;
+            }
+        img{
+            border: 1px solid black;
+            height: 3rem;
+            width: 3rem;
+        }
+        .img-bottom{
+            align-self: flex-end;
+            margin-right: 5px;
+        }
+        .table01{
+            margin: 10%;
+            border: 2px solid black ;
+            height: 50%;
+            width: 80%;
+            border-collapse: collapse;
+        }
+        tr,td,th{
+            border: 2px solid black;
+            text-align: center;}
+    </style>
+</head>
+<body>
+    <header style="text-align: center;">
+        <h1>Header</h1>
+    </header>
+    <main>
+        <div class="parent-main"> <!-- Add display flex here-->
+            <aside>
+                <p><a href="">Holy Grail 1</a></p>
+                <p><a href="">Holy Grail 2</a></p>
+                <p><a href="">Holy Grail 3</a></p>
+                <p><a href="">Holy Grail 4</a></p>
+            </aside>
+            <div class="parent-sections"> 
+                <section class="upper-section"><!-- Add display flex here-->
+                    <div class="container-img">
+                        <div class="upper-img">
+                            
+                        </div>
+                        <div class="img-div">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ0mJLtAn9XCA9HBuQjo_9VuYaU6eWQKCTUF14UAYDkw&s" alt="Pne Piece">
+                            <img src="https://64.media.tumblr.com/77432b89ceb4d13e8fc9a7be8b17d77a/6b7919f051dd2db3-92/s400x600/6bdcff90c2291300d1e08390b5240c630bd175bc.jpg" alt="Luffy" class="img-bottom">
+                        </div>
+                    </div>
+                    <div class="container-table">
+                        <table class="table01">
+                            <tr>
+                            <tbody>
+                                <tr>
+                                    <td >Mickey</td>
+                                    <td >Mouse</td>
+                                    <td >123 Fantasy Way</td>
+                                    <td >Anaheim</td>
+                                    <td >73</td>                  
+                            
+                                </tr>
+                                <tr class="tcolor">
+                                    <td >Bat</td>
+                                    <td >Man</td>
+                                    <td >321 Cavern Ave</td>
+                                    <td >Gotham</td>
+                                    <td >54</td>
+                                </tr>
+                                <tr>
+                                    <td >Wonder</td>
+                                    <td >Woman</td>
+                                    <td >987 Truth Way</td>
+                                    <td >Paradise</td>
+                                    <td >39</td>
+                                </tr>
+                                <tr class="tcolor">
+                                    <td >Donald</td>
+                                    <td >Duck</td>
+                                    <td >555 Quack Street</td>
+                                    <td >Mallard</td>
+                                    <td >65</td>
+                                </tr>
+                                </tbody>
+                        </table>
+                    </div>
+                </section>
+                <section class="lower-section">
+                    <div class="lower-div"> 
+
+                    </div>
+                    <div class="lower-div">
+
+                    </div>
+                    <div class="lower-div">
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer>
+       <h1>Footer</h1>
+    </footer>
+</body>
+</html>
