@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holygrail-3</title>
+    <style>
+        * {
+            Margin: 0;padding:0;
+            box-sizing: border-box;
+        }
+        header {
+            height: 10vh;
+            background-color: aqua;
+        }
+        footer {
+            height: 10vh;
+            background-color: aqua;
+        }
+        .container {
+            display: flex;
+            height: 80vh;
+        }
+        article {
+            width: 60%;
+            display: flex;
+            justify-content: center;
+            margin-top: 10vh;
+            
+        }
+        aside {
+            width: 20%;
+            background-color: aquamarine;
+        }
+        nav {
+            width: 20%;
+            background-color: rgb(55, 148, 117);
+            font-size: xx-large;
+        }
+        .content {
+            border: 1px solid black;
+            height: 60vh;
+            width: 80vh;
+            display: flex;
+            justify-content: center;
+            background-color: rgb(197, 196, 196);
+            -webkit-box-shadow: -6px 10px 24px 10px rgba(0,0,0,0.32); 
+            box-shadow: -6px 10px 24px 10px rgba(0,0,0,0.32);
+            font-size: x-large;
+            
+        }
+        .form1 {
+            height: 90%;
+            width: 45%;
+            justify-content: center;
+            margin-top: 10vh;
+
+        }
+        .form2 {
+            height: 90%;
+            width: 45%;
+            justify-content: center;
+            margin-top: 10vh;
+            margin-right: -10vh;
+        }
+        .myButton {
+color: rgb(255, 255, 255); font-size: 15px; line-height: 15px; padding: 16px; border-radius: 18px; font-family: Georgia, serif; font-weight: normal; text-decoration: none; font-style: normal; font-variant: normal; text-transform: none; background-image: linear-gradient(to right, rgb(28, 110, 164) 0%, rgb(35, 136, 203) 50%, rgb(20, 78, 117) 100%); box-shadow: rgba(0, 0, 0, 0.32) -6px 10px 24px 10px; border: 2px solid rgb(28, 110, 164); display: inline-block;}
+.myButton:hover {
+background: #1C6EA4; }
+.myButton:active {
+background: #144E75; }
+
+
+        
+            
+
+        
+    </style>
+
+
+
+</head>
+<body>
+    <div>
+        <header>
+            <h1>Header</h1>
+        </header>
+    </div>
+    <div class="container">
+        <article>
+            <div class="content">
+                
+                <form action="" class="form1">
+                    <label for="fname">First Name:</label>&nbsp;
+                    <input type="text" id="fname" name="fname"><br><br>
+                    <label for="Phone">Phone:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="number" id><br><br>
+                    <label for="email">Email:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="email" id="email"><br><br>
+                    <label for="datetime">Pick up Date <br> Time:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="datetime-local" id="date&time"><br><br>
+                    <label for="Place">Pick up Place:</label> &nbsp;
+                    <select name="place" id="place">
+                        <option value="Japan">Japan</option>
+                        <option value="Syria">Syria</option>
+                        <option value="NorthPole">NorthPole</option>
+                        <option value="SouthPole">SouthPole</option>
+                    </select><br><br>
+                    <label for="DropPlace">Drop Place:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <select name="DropPLace" id="DropPLace">
+                        <option value="Mars">Mars</option>
+                        <option value="Jupiter">Jupiter</option>
+                        <option value="Neptune">Neptune</option>
+                        <option value="Saturn">Saturn</option>
+                    </select><br><br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" value="Submit Booking" class="myButton">
+                    
+                </form>
+                <form class="form2">
+                    <p>Which Vihicle do you require?</p><br><br><br>
+
+                    <input type="radio" id="Van" name="Vihicle" value="Van">
+                    <label for="Van">Van</label><br>
+                    <input type="radio" id="Jeepney" name="Vihicle" value="Jeepney">
+                    <label for="Jeepney">Jeepney</label><br>
+                    <input type="radio" id="Tricycle" name="Vihicle" value="Tricycle">
+                    <label for="Tricycle">Tricycle</label><br><br><br>
+
+                    <p>Extra:</p><br><br><br>
+
+                    <input type="checkbox" id="Baby Seat" name="Extra" value="Baby Seat">
+                    <label for="Baby Seat">Baby Seat</label><br>
+                    <input type="checkbox" id="Wheelchair Access" name="Extra" value="Wheelchair Access">
+                    <label for="Wheelchair Access">Wheelchair Access</label><br>
+                    <input type="checkbox" id="Stock Tip" name="Extra" value="Stock Tip">
+                    <label for="Stock Tip">Stock Tip</label> <br><br>
+                    
+                
+
+                </form>
+                    
+
+
+                
+                
+            </div>
+        </article>
+        <aside>Aside</aside>
+        <nav>
+            <p>Nav</p><br>
+            <p>Click to see:</p><br>
+            <a href="./Holygrail-1.html">Holygrail-1</a><br>
+            <a href="./Holygrail-2.html">Holygrail-2</a><br>
+        
+        </nav>
+    </div>
+    <div>
+        <footer>
+            <h1>Footer</h1>
+        </footer>
+    </div>
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
