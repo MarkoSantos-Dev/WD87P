@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H Grail 3</title>
+    <style>
+       
+  * {
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid black; */
+    font-family: 'Times New Roman', Times, serif;
+
+  }
+  header {
+    height: 10vh;
+    width: 100%;
+    background-color: #7BF1A8; 
+    color: black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+    
+  }
+  main {
+    height: 70vh;
+    width: 100%;
+    display: flex;
+  }
+  section {
+    height: 70vh;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+  }
+  .section-mid {
+    height: 80%;
+    width: 80%;
+  }
+  .section-left {
+    height: 80%;
+    width: 40%;
+    background: #C1FBA4;
+    display: flex;
+    flex-direction: column;
+    align-items: self-end;
+    line-height: 45px;
+    border: 1px solid black;
+    border-right: none ;
+    cursor: pointer;
+  }
+  .button {
+   width: 100%;
+   height: 40px;
+   display: flex;
+   justify-content: flex-end;
+  }
+  button {
+    width: 120px;
+    background-color: #003E1F;
+    color: white;
+  }
+  .section-right {
+    height: 80%;
+    width: 30%;
+    background: #C1FBA4;
+    display: block;
+    border: 1px solid black;
+    line-height: 30px;
+    padding-left: 20px;
+    border-left: none ;   
+    cursor: pointer; 
+  }
+   aside {
+    height: 69vh;
+    width: 15%;  
+    background-color: #FFEF9F; 
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: bold;
+    border: 2px solid #FFD6E0 ;
+    
+  }
+  nav {
+    height: 70vh;
+    width: 15%;
+    background-color: #003E1F; 
+    color: black;
+    border: 2px solid FFD6E0;
+    font-size: 40px;
+    }
+  .link {
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    line-height: 50px;
+  }
+  footer {
+    height: 10vh;
+    width: 100%;
+    text-align: center;
+    background-color:#7BF1A8; 
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 40px;
+    font-weight: bold;
+  }
+    </style>
+</head>
+<body>
+   <header><i><ins><q>HEADER</q></ins></i></header>
+   <main>
+    <section class="section-mid">
+      <section class="section-left">
+        <p>
+            <label for="first-name"><mark><b>First Name:</b></mark>:</label>
+            <input style="width: 250px;" type="text" name="first-name" id="first-name" placeholder="Full Name">
+        </p>
+        <p>
+            <label for="Phone"><mark><b>Phone:</b></mark></label>
+            <input style="width: 283px;" type="text" name="" id="Phone">
+        </p>
+        <p>
+            <label for="email"><mark><b>Email:</b></mark></label>
+            <input style="width: 290px;" type="email" name="email" id="email">
+        </p>
+        <p>
+            <label for="datetime-local"><mark><b>Pick-up Date time:</b></mark></label>
+            <input style="width: 200px;" type="datetime-local" id="datetime-local" name="datetime-local">
+        </p>
+        <p>
+            <label class="inline" for="place"><mark><b>Pick up Place:</b></mark></label>
+            <select style="width: 233px;" name="place" id="place">
+                <option value="under">La Union</option>
+                <option value="under">Ilocos Sur</option>
+                <option value="under">Ilocos Norte</option>
+                <option value="under">Pangasinan</option>
+              </select>
+        </p>
+        <p>
+            <label for="drop"><mark><b>Drop Place:</b></mark></label>
+            <input style="width: 250px;" type="text" placeholder="Drop Place">
+        </p>
+        <p class="button">
+            <button><b>Submit Booking</b></button>
+        </p>
+      </section>
+      <section class="section-right">
+        <br>
+        <br>
+        <p> </p>
+        <p style="display: block;"><mark><i><ins><b>Which Vehicle do you requier?</b></ins></i></mark></p>
+        <p> </p>
+        <p>
+            <input class="radio" type="radio">
+            <label for="radio">Van</label>
+        </p>
+        <p>
+            <input class="radio" type="radio">
+            <label for="radio">Jeepney</label>
+        </p>
+        <p>
+            <input class="radio" type="radio">
+            <label for="radio">Tricycle</label>
+        </p>
+        <p><mark><ins><b><i>Extra:</i></b></ins></mark></p>
+        <p>
+            <input type="checkbox">
+            <label for="checkbox">Baby Seat</label>
+        </p>
+        <p>
+            <input type="checkbox">
+            <label for="checkbox">Wheel chair</label>
+        </p>
+        <p>
+            <input type="checkbox">
+            <label for="checkbox">Stock tip</label>
+        </p>
+      </section>
+    </section>
+    <aside><ins><i><q>ASIDE</q></i></ins></aside>
+    <nav>
+        <p class="link">Click to see:</p>
+        <p>
+            <a class="link" href="holygrail1.html" target="_top">Holygrail-1</a>
+        </p>
+        <p>
+            <a class="link" href="holygrail2.html" target="_top">Holygrail-2</a>
+        </p>
+    </nav>
+   </main>
+   <footer><ins><i><q>FOOTER</q></i></ins></footer>
+</body>
+</html>
