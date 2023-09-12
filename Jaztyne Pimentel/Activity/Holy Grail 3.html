@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header{
+            color: white;
+            background-color: #53BC9D;
+            width: 100%;
+            height: 20vh;
+            text-align: center;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+        }
+
+        footer{
+            color: white;
+            background-color: #53BC9D;
+            width: 100%;
+            height: 10vh;
+            text-align: center;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+        }
+
+        .element {
+            margin: auto;
+            margin: 0.5rem 0;
+            
+        }
+
+        main {
+            width: 100%;
+            height: 70vh;
+            display: flex;
+        }
+
+        aside {
+            width: 15%;
+            height: 70vh;
+            background-color: #67E5BE;
+            color: white;
+        }
+
+        nav {
+            width: 15%;
+            height: 70vh;
+            background-color: #4DB6BD;
+            color: white;
+        }
+
+        article {
+            width: 70%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1, h2 {
+            color: black;
+        }
+
+        form {
+            background-color: #F0FEFE;
+            box-shadow: 1px 1px 8px 0px #000000;
+            display: flex;
+            justify-content: space-between;
+            justify-content: center;
+            align-items: center;
+            color: #3F9292;
+        }
+
+        .center-form {
+            display: flex;
+            height: 80%;
+            width: 80%;
+        }
+
+        nav p {
+            margin: 1rem 0;
+            color: white;
+        }
+
+        ol {
+            list-style-position: inside;
+            padding-left: 1rem;
+            color: white;
+        }
+
+        li {
+            margin: 0.5rem 0;
+            color: white;
+        }
+    
+        #section-left {
+            height: 80%;
+            width: 40%;
+            padding: 0;
+            text-align: end;
+        }
+
+        #section-right {
+            height: 80%;
+            width: 30%;
+            padding: 0;
+            align-items: flex-start;
+            text-align: start;
+        }
+
+        #section-right .category,
+        #section-right .Extra {
+            padding: 1rem;
+        }
+
+        #Booking{
+            color: white;
+            background-color: #53BC9D;
+            padding: 0;
+            height: 5vh;
+            width: 10vw;
+            align-content: end;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h2 style="color: white;">Header</h2>
+    </header>
+    <main>
+        <article>
+            <form action="Booking Platform" class="center-form">
+                <div class="user-details" id="section-left">
+                    <div class="input-box">
+                        <span class="details">Full name:</span>
+                        <input type="text" placeholder="Full Name" required>
+                    </div><br>
+                    <div class="input-box">
+                        <span class="details">Phone:</span>
+                        <input type="text" placeholder="" required>
+                    </div><br>
+                    <div class="input-box">
+                        <span class="details">E-mail:</span>
+                        <input type="text" placeholder="E-mail" required>
+                    </div><br>
+                    <div>
+                        <label for="pickup_date">Pick up Date time:</label>
+                        <input type="datetime-local" name="pickup_date" id="pickup_date" placeholder="" required><br><br>
+
+                        <p>Pick up Place:
+                            <select name="Pick up Place" id="Pick up Place">
+                                <option value="MOA">MOA</option>
+                                <option value="Robinsons">Robinsons</option>
+                                <option value="El tocuyo">El tocuyo</option>
+                            </select>
+                        </p><br><br>
+
+                        <label for="drop_place">Drop Place:</label>
+                        <input type="text" name="drop_place" id="drop_place" placeholder="Drop Place" required><br><br>
+                    </div> 
+                    <button type="submit" id="Booking">Submit Booking</button>               
+                </div>
+                <div class="button" id="section-right">
+                    <div class="Which vehicle do you require?">
+                        <div class="category">
+                            <p>Which vehicle do you require?</p><br>
+                            <input type="radio" name="radio" id="Van">
+                            <label for="Van">Van</label><br>
+                            <input type="radio" name="radio" id="Jeepney">
+                            <label for="Jeepney">Jeepney</label><br>
+                            <input type="radio" name="radio" id="Tricycle">
+                            <label for="Tricycle">Tricycle</label><br>
+                        </div>
+                        <div class="Extra">
+                            <p>Extra</p><br>
+                            <input type="checkbox" name="checkbox" id="Baby seat">
+                            <label for="Baby seat">Baby seat</label><br>
+                            <input type="checkbox" name="checkbox" id="Wheelchair Access">
+                            <label for="Wheelchair Access">Wheelchair Access</label><br>
+                            <input type="checkbox" name="checkbox" id="Stock Tip">
+                            <label for="Stock Tip">Stock Tip</label><br>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </article>
+        <aside><br>Aside</aside>
+        <nav>
+            <p>Nav</p>
+            <div>
+                <p>Click to See:</p>
+                <ol type="i">
+                    <li><a href="./Holy Grail 1.html">Holy Grail 1</a></li>
+                    <li><a href="./Holy Grail 2.html">Holy Grail 2</a></li>
+                </ol>
+            </div>
+        </nav>
+    </main>
+    <footer>
+        <h2 style="color: white;">Footer</h2>
+    </footer>
+</body>
+</html>
