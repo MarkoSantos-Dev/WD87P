@@ -1,0 +1,159 @@
+HG1
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holygrail1</title>
+    <link rel="stylesheet" href="../css/hg1style.css">
+</head>
+<body>
+    <header>
+        HEADERG1
+    </header>
+    <div class="main">
+        <aside class="left">
+            Nav
+            <p>Click to see</p>
+            <p><a href="holygrail2.html" class="links"> Holygrail-2</a></p>
+            <p><a href="holygrail3.html" class="links"> Holygrail-3</a></p>
+        </aside>
+        <main>
+            Article
+        </main>
+        <aside class="right">
+            Aside
+        </aside>
+    </div>
+    <footer>
+        FOOTER
+    </footer>
+</body>
+</html>
+
+HG2
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holygrail2</title>
+    <link rel="stylesheet" href="../css/hg2style.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="section-left">
+        <aside class="left">
+            Nav
+            <p>Click to see</p>
+            <p><a href="holygrail1.html" class="links"> Holygrail-1</a></p>
+            <p><a href="holygrail3.html" class="links"> Holygrail-3</a></p>
+        </aside>
+        </div>
+        <div class="section-right">
+            <header>
+                HEADERG2
+            </header>
+                <div class="section-center">
+                    <main>
+                        Article
+                    </main>
+                    <aside class="right">
+                        Aside
+                    </aside>
+                    </div>  
+            <footer>
+                FOOTER
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
+
+HG3
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holygrail3</title>
+    <link rel="stylesheet" href="../css/hg3style.css">
+</head>
+<body>
+    <header>
+        HEADERG3
+    </header>
+    <div class="main">
+        <main>            
+            <form action="Booking Site" method="get" name="myForm">
+                <div class="user-details" id="section-left">
+                    <div class="input-box">
+                        <span class="details">Full name:</span>
+                        <input type="text" placeholder="Full Name" required>
+                    </div><br>
+                    <div class="input-box">
+                        <span class="details">Phone:</span>
+                        <input type="text" placeholder="" required>
+                    </div><br>
+                    <div class="input-box">
+                        <span class="details">E-mail:</span>
+                        <input type="text" placeholder="E-mail" required>
+                    </div><br>
+                    <div>
+                        <label for="pickup_date">Pick up Date time:</label>
+                        <input type="datetime-local" name="pickup_date" id="pickup_date" placeholder="" required><br><br>
+
+                        <p>Pick up Place:
+                            <select name="Pick up Place" id="Pick up Place">
+                                <option value="MOA">MOA</option>
+                                <option value="sm north">SN MORTH</option>
+                                <option value="isetan">ISETAN</option>
+                            </select>
+                        </p><br><br>
+
+                        <label for="drop_place">Drop Place:</label>
+                        <input type="text" name="drop_place" id="drop_place" placeholder="Drop Place" required><br><br>
+                    </div> 
+                    <button type="submit" id="Booking">Submit Booking</button>               
+                </div>
+
+            <div class="button" id="section-right">
+                <div class="Which vehicle do you require?">
+                    <div class="category">
+                        <p>Which vehicle do you require?</p><br>
+                        <input type="radio" name="radio" id="Van">
+                        <label for="Van">Van</label><br>
+                        <input type="radio" name="radio" id="Jeepney">
+                        <label for="Jeepney">Jeepney</label><br>
+                        <input type="radio" name="radio" id="Tricycle">
+                        <label for="Tricycle">Tricycle</label><br>
+                    </div>
+                    <div class="Extra">
+                        <p>Extra</p><br>
+                        <input type="checkbox" name="checkbox" id="Baby seat">
+                        <label for="Baby seat">Baby seat</label><br>
+                        <input type="checkbox" name="checkbox" id="Wheelchair Access">
+                        <label for="Wheelchair Access">Wheelchair Access</label><br>
+                        <input type="checkbox" name="checkbox" id="Stock Tip">
+                        <label for="Stock Tip">Stock Tip</label><br>
+                    </div>
+                </div>
+            </div>
+        </form>
+        </main>
+        <aside class="left">
+            Aside
+            </aside>
+        <aside class="right">
+            Nav
+            <p>Click to see</p>
+            <p><a href="holygrail1.html" class="links"> Holygrail-1</a></p>
+            <p><a href="holygrail2.html" class="links"> Holygrail-2</a></p>
+        
+        </aside>
+    </div>
+    <footer>
+        FOOTER
+    </footer>
+</body>
+</html>
