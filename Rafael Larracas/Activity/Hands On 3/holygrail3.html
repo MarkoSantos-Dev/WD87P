@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holy Grail 3</title>
+    <style>
+       
+  * {
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid black; */
+    font-family: 'Times New Roman', Times, serif;
+
+  }
+  header {
+    height: 15vh;
+    width: 100%;
+    background-color: darkgreen; 
+    color: black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: bold;
+    color: whitesmoke;
+    
+  }
+  main {
+    height: 70vh;
+    width: 100%;
+    display: flex;
+  }
+  section {
+    height: 70vh;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+  }
+  .section-mid {
+    height: 80%;
+    width: 80%;
+  }
+  .section-left {
+    height: 80%;
+    width: 40%;
+    background: #a5f67d;
+    display: flex;
+    flex-direction: column;
+    align-items: self-end;
+    line-height: 45px;
+    border: 1px solid black;
+    border-right: none ;
+    cursor: pointer;
+  }
+  .button {
+   width: 100%;
+   height: 40px;
+   display: flex;
+   justify-content: flex-end;
+  }
+  button {
+    width: 120px;
+    background-color: #003E1F;
+    color: white;
+  }
+  .section-right {
+    height: 80%;
+    width: 30%;
+    background: #a5f67d;
+    display: block;
+    border: 1px solid black;
+    line-height: 30px;
+    padding-left: 20px;
+    border-left: none ;   
+    cursor: pointer; 
+  }
+   aside {
+    height: 99%;
+    width: 15%;  
+    background-color: #FFEF9F; 
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border: 2px solid #FFD6E0 ;
+    
+  }
+  nav {
+    height: 70vh;
+    width: 15%;
+    background-color: rgb(3, 118, 40); 
+    color: black;
+    border: 2px solid FFD6E0;
+    }
+
+  .link {
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  footer {
+    height: 15vh;
+    width: 100%;
+    text-align: center;
+    background-color:darkgreen; 
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-weight: bold;
+    color: whitesmoke;
+  }
+    </style>
+</head>
+<body>
+   <header>HEADER</header>
+   <main>
+    <section class="section-mid">
+      <section class="section-left">
+        <div>
+            <label for="first-name"><b>First Name:</b></label>
+            <input style="width: 250px;" type="text" name="first-name" id="first-name" placeholder="Full Name">
+        </div>
+        <div>
+            <label for="Phone"><b>Phone:</b></label>
+            <input style="width: 284px;" type="text" name="" id="Phone">
+        </div>
+        <div>
+            <label for="email"><b>Email:</b></label>
+            <input style="width: 286px;" type="email" name="email" id="email">
+        </div>
+        <div>
+            <label for="datetime-local"><b>Pick-up Date time:</b></label>
+            <input style="width: 203px;" type="datetime-local" id="datetime-local" name="datetime-local">
+        </div>
+        <div>
+            <label class="inline" for="place"><b>Pick up Place:</b></label>
+            <select style="width: 238px;" name="place" id="place">
+                <option value="under">Manila City</option>
+                <option value="under">Pasig City</option>
+                <option value="under">Mandaluyong City</option>
+                <option value="under">Pasay City</option>
+              </select>
+        </div>
+        <div>
+          <label for="drop"><b>Drop Place:</b></label>
+          <input style="width: 250px;" type="text" placeholder="Drop Place">
+        </div>
+        <div class="button">
+            <button><b>Submit Booking</b></button>
+        </div>
+      </section>
+      <section class="section-right">
+        <br>
+        <p style="display: block;"><b>Which vehicle do you require?</b></p>
+        <div>
+            <input class="radio" type="radio">
+            <label for="radio">Van</label>
+        </div>
+        <div>
+            <input class="radio" type="radio">
+            <label for="radio">Jeepney</label>
+        </div>
+        <div>
+            <input class="radio" type="radio">
+            <label for="radio">Tricycle</label>
+        </div>
+        <div><b>Extra:</b></div>
+        <div>
+            <input type="checkbox">
+            <label for="checkbox">Baby Seat</label>
+        </div>
+        <div>
+            <input type="checkbox">
+            <label for="checkbox">Wheel chair</label>
+        </div>
+        <div>
+            <input type="checkbox">
+            <label for="checkbox">Stock tip</label>
+        </div>
+      </section>
+    </section>
+    <aside>ASIDE</aside>
+    <nav>
+        <p class="link">Click to see:</p>
+        <div>
+            <a class="link" href="holygrail1.html" target="_top">Holygrail 1</a>
+        </div>
+        <div>
+            <a class="link" href="holygrail2.html" target="_top">Holygrail 2</a>
+        </div>
+    </nav>
+   </main>
+   <footer>FOOTER</footer>
+</body>
+</html>
