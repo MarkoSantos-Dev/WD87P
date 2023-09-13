@@ -1,0 +1,248 @@
+HG1
+*{
+            
+    box-sizing: border-box;
+}
+body{
+    height: 98vh;
+    background: lightgray;
+    font-family: sans-serif;
+    text-align: center;
+    color: black;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    background: lightseagreen;
+    padding: 2em 0 2em 0;
+    color: whitesmoke;
+}
+.main{
+    display: flex;
+    flex: 1;
+}
+.links{
+    color: whitesmoke;
+}
+.left{
+    background: rgb(52, 166, 223);
+    color: whitesmoke;
+    text-align: left;
+    padding: 1em 0 1em 0;
+    padding-left: 1em;
+    flex: 1 1 100px;
+}
+main{
+    background: whitesmoke;
+    padding: 1em 0 1em 0;
+    flex: 5 5 150px;
+}
+.right{
+    background: rgb(126, 220, 201);
+    color: whitesmoke;
+    text-align: left;
+    padding: 1em 0 1em 0;
+    padding-left: 1em;
+    flex: 1 1 100px;
+}
+footer{
+    background: lightseagreen;
+    color: whitesmoke;
+    padding: 1em 0 1em 0;
+}
+@media all and (max-width: 750px) {
+    .main{
+        flex-direction: column;
+        padding: 1em 0 1em 0;
+    }
+}
+
+
+HG2
+*{
+            
+    box-sizing: border-box;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.section-right{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 100px;
+}
+
+.section-center{
+    display: flex;
+    flex-direction: row;
+}
+
+body{
+    height: 98vh;
+    background: lightgray;
+    font-family: sans-serif;
+    text-align: center;
+    color: black;
+    font-size: 12px;
+}
+header{
+    background: lightseagreen;
+    padding: 2em 0 2em 0;
+    color: whitesmoke;
+}
+
+.links{
+    color: whitesmoke;
+}
+.left{
+    background: rgb(52, 166, 223);
+    color: whitesmoke;
+    text-align: left;
+    height: 95vh;
+    padding: 1em;
+    padding-top: 5em;
+}
+main{
+    background: whitesmoke;
+    padding: 1em 0 1em 0;
+    flex: 5 5 150px;
+}
+.right{
+    height: 79.5vh;
+    background: rgb(126, 220, 201);
+    color: whitesmoke;
+    text-align: center;
+    padding: 1em 0 1em 0;
+    padding-right: 5em;       
+}
+footer{
+    background: lightseagreen;
+    color: whitesmoke;
+    padding: 1em 0 1em 0;
+}
+@media all and (max-width: 750px) {
+    .main{
+        flex-direction: column;
+        padding: 1em 0 1em 0;
+    }
+}
+
+
+
+HG3
+*{
+    box-sizing: border-box;
+}
+
+body{
+    height: 98vh;
+    background: lightgray;
+    font-family: sans-serif;
+    text-align: center;
+    color: black;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    background: lightseagreen;
+    padding: 1em 0 1em 0;
+    color: whitesmoke;
+}
+
+main{
+    background: whitesmoke;
+    padding: 1em 0 1em 0;
+    flex: 5 5 150px;
+    display: inline-block;
+    width: 250px;
+}
+
+.main{
+    display: flex;
+    flex: 1;
+}
+.links{
+    color: whitesmoke;
+}
+.left{
+    background: rgb(126, 220, 201);
+    color: whitesmoke;
+    text-align: left;
+    padding: 1em 0 1em 0;
+    padding: 1em;
+    flex: 1 1 100px;
+}
+
+form {
+    margin: 5%;
+    margin-top: 10%;
+    background-color: #F0FEFE;
+    font-size: 10px;
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    color: #3F9292;
+    padding-top: 40px;
+}
+
+#section-left{
+    height: 50vh;
+    width: 40%;
+    padding: 0;
+    text-align: end;
+}
+
+#section-right{
+    height: 50vh;
+    width: 30%;
+    padding: 0;
+    align-items: flex-start;
+    text-align: start;
+}
+
+#section-right .category,
+#section-right .Extra {
+    padding: 1rem;
+}
+
+#Booking{
+    color: white;
+    background-color: #53BC9D;
+    padding: 0;
+    height: 5vh;
+    width: 10vw;
+    align-content: end;
+}
+
+button{
+    background-color: rgb(26, 137, 131);
+    padding: 5px 15px;
+    font-size: 10px;
+    display: inline-block;
+}   
+
+.right{
+    background: rgb(52, 166, 223);
+    color: whitesmoke;
+    text-align: left;
+    padding: 1em 0 1em 0;
+    padding-left: 1em;
+    flex: 1 1 100px;
+}
+footer{
+    background: lightseagreen;
+    color: whitesmoke;
+    padding: 1em 0 1em 0;
+}
+@media all and (max-width: 750px) {
+    .main{
+        flex-direction: column;
+        padding: 1em 0 1em 0;
+    }
+}
