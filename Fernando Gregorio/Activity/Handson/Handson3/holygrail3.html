@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header{
+            width: 100%;
+            height: 7rem;
+            background-color: magenta;
+            text-align: justify;
+        }
+        main{
+            height: 65vh;
+            width: 100%;
+            display: flex;
+            margin: 0;
+            margin-top: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .row {
+            display: flex;
+            border: 1px solid black;
+            width: 70%;
+            margin:7%;         
+            background-color: skyblue;
+            font-size: large;
+        }
+        .column-left{
+        flex: 50%;
+        text-align: right;
+        padding-right: 20px;
+        
+        }
+        .column-right {
+        flex: 50%;
+        text-align: left;
+        padding-left: 20px;
+        
+        }
+        nav{
+            width: 20%;
+            height: 100%;
+            border: 1px solid black;
+            background-color: violet;
+            display: flex;
+            justify-content: center;
+        }
+        article{
+            width: 60%;
+            height: 100%;
+            border: 1px solid black;
+            background-color: whitesmoke;
+            display: flex;
+            justify-content: center;
+        }
+        aside{
+            width: 20%;
+            height: 100%;
+            border: 1px solid black;
+            background-color: violet;
+            display: flex;
+            justify-content: center;
+        }
+        footer{
+            width: 100%;
+            height: 7rem;
+            background-color: magenta;
+            margin-bottom: 10px;
+            text-align: justify;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Header</h2>
+    </header>
+        <main>
+            <div class="row">
+                <div class="column-left">
+                    <p>
+                        <label for="text">First name:</label>
+                        <input type="text" placeholder="Full name" required>
+                    </p>
+                    <br>
+                    <p>
+                        <label for="text">Phone:</label>
+                        <input type="text" required> 
+                    </p>
+                    <br>
+                    <p>
+                        <label for="text">Email:</label>
+                        <input type="text" placeholder="Email" required> 
+                    </p>
+                    <br>
+                    <p>
+                        <label for="text">Pick Up Date/Time:</label>
+                        <input type="datetime-local" required> 
+                    </p>
+                    <br>
+                    <p>
+                        <label for="text">Pick Up Place:</label>
+                        <select name="place" id="pick-up-place">
+                            <option value="Ayala By the Bay">Ayala Malls by the Bay</option>
+                            <option value="MOA">MOA</option>
+                            <option value="MRT Taft">MRT Taft</option>
+                        </select>
+                    </p>
+                    <br>
+                    <button>Submit Booking</button>
+                </div>
+                <div class="column-right">
+                    <p>What Vehicle do you require?</p>
+                    <p>
+                        <br>
+                        <p><input type="radio" name="vehicle" id="van">
+                            <label for="van">Van</label></p>
+                        <p><input type="radio" name="vehicle" id="jeepney">
+                            <label for="van">Jeepney</label></p>    
+                        <p><input type="radio" name="vehicle" id="tricycle">
+                            <label for="van">Tricycle</label></p>
+                    </p>
+                    <br>
+                    <br>
+                    <p>Extra:</p>
+                    <br>
+                    <p><input type="checkbox" name="baby-seat" id="baby-seat">
+                        <label for="baby-seat">Baby seat</label></p>
+                    <p><input type="checkbox" name="wheelchair access" id="wheelchair access">
+                        <label for="baby-seat">Wheelchair Access</label></p>
+                    <input type="checkbox" name="stock tip" id="stock tip">
+                    <label for="baby-seat">Stock Tip</label>
+
+                </div>
+            </div>
+            <aside>Aside</aside>
+            <nav>Nav
+                <div>
+                    <br>
+                    <p>Click to see</p>
+                    <p><a href="./holygrail.html">Holygrail-1</a></p>
+                    <p><a href="./holygrail2.html">Holygrail-2</a></p>
+                    </div>
+            </nav>
+        </main>
+    <footer>Footer</footer>
+</body>
+</html>
