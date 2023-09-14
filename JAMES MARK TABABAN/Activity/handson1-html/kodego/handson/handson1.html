@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+    *{
+  box-sizing: border-box;
+}
+     table {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: medium;
+  border-collapse: collapse;
+  width: 60%;
+}
+th {
+    background-color: rgb(37, 124, 95);
+    font: bolder;
+}
+
+td, tr {
+  border: 3px solid rgb(114, 68, 12);
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(odd) {
+  background-color: rgb(223, 172, 111);
+}
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+}
+p{
+    font-size: 120%;
+    font-weight: 200%;
+    font-style: italic;
+    font-family: cursive;
+}
+
+</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handson1- James Tababan</title>
+</head>
+<body>
+    <!-- 1. Create html table with the following data:  -->
+    <table> 
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Address</th>
+        <th>City</th>
+        <th>Age</th>
+        <!-- 1stRow -->
+        <tr>
+            <td>Mickey</td>
+            <td>Mouse</td>
+            <td>123 Fantasy Way</td>
+            <td>Anaheim</td>
+            <td>94</td>
+        </tr>
+        <!-- 2ndRow -->
+        <tr>
+            <td>Bat</td>
+            <td>Man</td>
+            <td>321 Cavern Ave</td>
+            <td>Gotham</td>
+            <td>84</td>
+        </tr>
+        <!-- 3rdRow -->
+        <tr>
+            <td>Wonder</td>
+            <td>Woman</td>
+            <td>987 Truth Way</td>
+            <td>Paradise</td>
+            <td>2000</td>
+        </tr>
+        <!-- 4thRow -->
+        <tr>
+            <td>Donald</td>
+            <td>Duck</td>
+            <td>555 Quack Street</td>
+            <td>Mallard</td>
+            <td>89</td>
+        </tr>
+       
+            <!-- 5thRow -->
+            <tr>
+                <td>Bugs</td>
+                <td>Bunny</td>
+                <td>567 Corrot Street</td>
+                <td>Rascal</td>
+                <td>83</td>
+            </tr>
+            <!-- 6thRow -->
+            <tr>
+                <td>Marvin</td>
+                <td>The Martian</td>
+                <td>999 Acme Way</td>
+                <td>Canyon</td>
+                <td>75</td>
+            </tr>
+            <!-- 7thRow -->
+            <tr>
+                <td>Groot</td>
+                <td>Tree</td>
+                <td>234 Purfect Street</td>
+                <td>Hairball</td>
+                <td>20</td>
+            </tr>
+            <!-- 8thRow -->
+            <tr>
+                <td>Cadis Etrama</td>
+                <td>Di Raizel</td>
+                <td>543</td>
+                <td>Itotltaw</td>
+                <td>2000</td>
+            </tr>
+        </table>
+      <br>
+      <br>
+      <br>
+      <br>
+
+     <!-- 2. Create another table reference to the first one, but this time add table header "Image" and insert image in table data, images will have same width and height.  -->
+    <table> 
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Address</th>
+        <th>City</th>
+        <th>Age</th>
+        <th>Image</th>
+
+        <!-- 1stRow -->
+        <tr>
+            <td>Mickey</td>
+            <td>Mouse</td>
+            <td>123 Fantasy Way</td>
+            <td>Anaheim</td>
+            <td>94</td>
+            <td><img src="https://s7.orientaltrading.com/is/image/OrientalTrading/13612583?$PDP_VIEWER_IMAGE$" alt="Mickey" width="65" height="40"></td>
+        </tr>
+        <!-- 2ndRow -->
+        <tr>
+            <td>Bat</td>
+            <td>Man</td>
+            <td>321 Cavern Ave</td>
+            <td>Gotham</td>
+            <td>84</td>
+            <td><img src="https://mixed-news.com/en/wp-content/uploads/2022/11/Batman-Arkham-VR-860x484.jpg" alt="Batman" width="65" height="60"></td>
+        </tr>
+        <!-- 3rdRow -->
+        <tr>
+            <td>Wonder</td>
+            <td>Woman</td>
+            <td>987 Truth Way</td>
+            <td>Paradise</td>
+            <td>2000</td>
+            <td><img src="https://cdn.europosters.eu/image/750webp/116152.webp" alt="Wonder Woman" width="65" height="60"></td>
+        </tr>
+        <!-- 4thRow -->
+        <tr>
+            <td>Donald</td>
+            <td>Duck</td>
+            <td>555 Quack Street</td>
+            <td>Mallard</td>
+            <td>89</td>
+            <td><img src="https://media.newyorker.com/photos/5cf81a2b78887298005c996a/master/w_1280,c_limit/KidLit-DonaldDuck.jpg" alt="Donald Duck" width="65" height="60"></td>
+        </tr>
+       
+            <!-- 5thRow -->
+            <tr>
+                <td>Bugs</td>
+                <td>Bunny</td>
+                <td>567 Corrot Street</td>
+                <td>Rascal</td>
+                <td>83</td>
+                <td><img src="https://files.cults3d.com/uploaders/14083807/illustration-file/299b63f1-c8cb-4e0d-929e-30e3b927ec64/Bugs_Bunny_Space_Jam_thumb.jpg" alt="Bugs Bunny" width="65" height="60"></td>
+            </tr>
+            <!-- 6thRow -->
+            <tr>
+                <td>super</td>
+                <td>man</td>
+                <td>999 Acme Way</td>
+                <td>Canyon</td>
+                <td>75</td>
+                <td><img src="https://cdn.theatlantic.com/thumbor/t_SUTY6eiMNjB5_jOvdz8Cv0mFA=/0x0:1920x1080/976x549/media/img/mt/2015/05/man/original.jpg" alt="Marvin" width="65" height="60"></td>
+            </tr>
+            <!-- 7thRow -->
+            <tr>
+                <td>spider</td>
+                <td>man</td>
+                <td>234 Purfect Street</td>
+                <td>Hairball</td>
+                <td>20</td>
+                <td><img src="https://static.toiimg.com/thumb/msid-88293744,imgsize-77580,width-400,resizemode-4/88293744.jpg" alt="Groot" width="65" height="60"></td>
+            </tr>
+            <!-- 8thRow -->
+            <tr>
+                <td>Captain</td>
+                <td>america</td>
+                <td>543</td>
+                <td>Itotltaw</td>
+                <td>2000</td>
+                <td><img src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2023/07/why-captain-america-should-be-marvel-s-premier-street-level-hero-after-sdcc-insight.jpg?q=50&fit=contain&w=943&h=&dpr=1.5" alt="Noblesse" width="65" height="60"></td>
+            </tr>
+        </table>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <!-- 3. Make an ordered list of your top 3 restaurant and link their website address to your list items.  -->
+            
+            <h1>Top 3 Restaurant</h1>
+            <ol type="1">
+                <li><a href="https://www.facebook.com/makusramen">Maku's Ramen House</a></li>
+                <li><a href="https://www.facebook.com/izakayashinchanrestaurant">Izakaya Shinchan Restaurant</a></li>
+                <li><a href="https://www.vikings.ph/">Vikings PH</a></li>
+            </ol>
+            
+            <!-- 4. Make an unordered list of 5 colors. -->
+            <h1>Top 5 Colors</h1>
+            <ul>
+                <li style="color:black;">Black</li>
+                <li style="color:gray;">Gray</li>
+                <li style="color:green;">green</li>
+                <li style="color:blue;">Blue</li>
+                <li style="color:red;">Red</li>
+            </ul>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <!-- 5.  Create an article with your own content. -->
+            <article>
+            <h1>My Bucket List</h1>
+            <p>My bucket list is to became a well known chef and to have my own restaurant someday.</p>
+            <iframe width="1280" height="720" src="https://www.youtube.com/embed/aopS3q6f1GY" title="Cooking Tips For Kitchen Beginners | Epicurious 101" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        </article>
+            
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+
+            <!-- 6. Embed your favorite music video in your website -->
+            <h1>Michael pangilinan cover songs </h1>
+
+            <iframe width="1280" height="720" src="https://www.youtube.com/embed/mpZMEAgsyXg" title="Weak x Kung Sakali x i&#39;d rather - Michael Pangilinan Songs Covers Love Songs - Bagong OPM 2023" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+            <br>
+            <br>
+            <br>
+            <br>
+
+            
+
+            <!-- 7. Embed Google Map and set location to your favorite Hangout place.  -->
+        <h1>Pn Cavite city:</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!4v1694672516294!6m8!1m7!1s3GQMJfxJrNm3gqtfWQUyAw!2m2!1d14.48137754849159!2d120.9070178264739!3f180.89248362196506!4f-12.740308956286498!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</body>
+</html>

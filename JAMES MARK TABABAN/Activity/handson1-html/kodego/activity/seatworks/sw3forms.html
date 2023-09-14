@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UF-8">
+    <meta name="viewport" content="width=device-width,"initial-scale="1.0">
+    <title>SeatWork3-James Tababan</title>
+    <style>
+    form {
+        border: 5px solid black;
+        width: 28%;
+        background-color: lightgreen; {80, 180, 280};
+        padding: 15px
+    }
+    .center-form{
+        display:flex;
+        justify-content: center;
+        margin: 0;
+        font-size: large;
+    }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Race Registration</h1>
+    <div class= "center-form">
+        <form action="/forms.html">
+            <div class="form-row">
+                <label for="FirstName">First Name</label>
+                <input type="text" name="FirstNAME" id="FirstName">
+                <label for="LastName">LastName</label>
+                <Input type="text" name="LastName" id="LastName">
+            </div>
+            <p>Select a Race:</p>
+            <input type="radio" name="radio" id="20k">
+            <label for="20k">Fun Run 10k</label><br>
+            <input type="radio"name="radio" id="HalfMar">
+            <label for="Halfmar">Half Marathon</label><br>
+            <input type="radio" name="radio" id="fullmar">
+            <label for="fullmar">Full Marathon</label><br>
+            <p>
+                <label for="Email">Email</label>
+                <input type="text" name="Email" id="Email">
+                <label for="Password">Password</label>
+                <Input type="text" name="Password" id="Password">
+            </p>
+            <p>Select Age Group
+                <Select Name="Age" id="Age">
+                    <Option value="Under 15">Under 15</Option>
+                    <Option value="Above 15">Above 15</Option>
+                    <Option value="Over 40">Over 40</Option>
+                </Select>
+            </p>
+            <button type="Submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>
