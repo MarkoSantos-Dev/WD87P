@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HolyGrail1</title>
+    
+<style>
+    header{
+        border: 1px solid black;
+        background-color: teal;
+        width: 100%;
+        height: 35px;
+        text-align: center;
+        color: azure;
+        padding-top: 18px
+    }
+footer{
+    border: 1px solid black;
+        background-color: teal;
+        width: 100%;
+        height: 35px;
+        text-align: center;
+        color: azure;
+        padding-top: 18px
+}
+main{ 
+      width: 100%;
+      height: 25rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 1px;
+    }
+    
+Nav{
+    border: 1px solid black;
+        background-color: antiquewhite;
+    width: 20%;
+    height: 25rem;
+    color: rgb(0, 35, 139);
+    
+}
+aside {
+    border: 1px solid black;
+        background-color: antiquewhite;
+    width: 20%;
+    height: 25rem
+}
+</style>
+</head> 
+<body>
+    <header class="header">Header</header>
+<main>
+    <nav>
+       <p>Nav</p>
+    </nav>
+    <article>
+        <p>Article</p>
+    </article>
+    <aside>
+        <p>Aside</p>
+    </aside>
+</main>
+
+<Footer>Footer</Footer>
+    
+</body>
+</html>
