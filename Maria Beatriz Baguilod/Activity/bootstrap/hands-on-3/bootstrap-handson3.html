@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap | Hands On 3</title>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: 'raleway', sans-serif;
+        }
+
+        .background-image{
+            height: 60vh;
+            background-image: url(../img/madenice-coverphoto.jpeg);
+            background-size: cover;
+            opacity: 90%;
+            position: relative;
+        }
+
+        .container{
+          overflow: hidden;
+          position: absolute;
+          top: 30%;
+          bottom: 0;
+          max-width: 550px;
+        }
+
+        h2{
+            margin-left: 2%;
+            margin-top: 2%;
+            font-size: 2.5rem;
+        }
+
+    </style>
+</head>
+<script src="/js/bootstrap.js"></script>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand text-light" href="#">
+                <img src="/img/madenice_logo.png" alt="Logo" width="40" height="40" class="d-inline-block align-text-center">
+                Made Nice
+              </a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <!-- start of modal -->
+                  <li class="nav-item">   
+                    <button type="button" class="btn btn-light p-2" data-toggle="modal" data-target="#exampleModal">
+                      🛒 Inventory
+                    </button>
+                    
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">🛒 Inventory</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <h6>Available Items</h6>
+                            <!-- modal table -->
+                            <table class="table table-striped">
+                              <thead>
+                                <th>Item ID</th>
+                                <th>Item Name</th>
+                                <th>Item Price</th>
+                                <th>Item Category</th>
+                                <th>Action</th>
+                              </thead>
+                              <tbody class="table-group-divider">
+                                <tr>
+                                  <td>F01</td>
+                                  <td>Beef</td>
+                                  <td>₱1,350</td>
+                                  <td>Mains</td>
+                                  <td>
+                                    <button type="button" class="btn btn-info d-block">Edit</button>
+                                    <button type="button" class="btn btn-danger d-block">Delete</button>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>F02</td>
+                                  <td>Halibut</td>
+                                  <td>₱995</td>
+                                  <td>Seafood</td>
+                                  <td>
+                                    <button type="button" class="btn btn-info d-block">Edit</button>
+                                    <button type="button" class="btn btn-danger d-block">Delete</button>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>F03</td>
+                                  <td>Octopus</td>
+                                  <td>₱795</td>
+                                  <td>Appetizer</td>
+                                  <td>
+                                    <button type="button" class="btn btn-info d-block">Edit</button>
+                                    <button type="button" class="btn btn-danger d-block">Delete</button>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-success">Save changes</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- end of modal -->
+                  </li>
+                </ul>
+            </div>
+          </nav>
+    </header>
+
+    <!-- Banner -->
+    <main>
+        <div class="banner">
+            <div class="background-image position-relative">
+              <div class="container">
+                  <h1 class="text-light">Made Nice: Your Asian Favorites Get a Fresh Twist</h1>
+                  <button type="button" class="btn btn-light">View Menu</button>
+              </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Menu -->
+    <section>
+        <h2>Menu</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4 m-4">
+            <div class="col">
+              <div class="card h-100">
+                <img src="/img/beef.jpeg" class="card-img-top" alt="madenice-beef">
+                <div class="card-body">
+                  <h5 class="card-title">Beef</h5>
+                  <p class="card-text">Wagyu Flank Steak, Sweet Potato, Miso</p>
+                    <p class="font-italic">Mains</p> 
+                </div>
+                <div class="card-footer">
+                  <small class="text-body-secondary">Php 1,350</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="/img/halibut.jpeg" class="card-img-top" alt="madenice-halibut">
+                <div class="card-body">
+                  <h5 class="card-title">Halibut</h5>
+                  <p class="card-text">Mushroom dashi, kamote tops with tutong rice</p>
+                    <p class="font-italic">Seafood</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-body-secondary">Php 995</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="/img/octopus.jpeg" class="card-img-top" alt="madenice-octopus">
+                <div class="card-body">
+                  <h5 class="card-title">Octopus</h5>
+                  <p class="card-text">Grilled octopus tentacles with marble potatoes, parsley and tomato sauce</p>
+                    <p class="font-italic">Appetizer</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-body-secondary">Php 795</small>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <!-- Footer -->
+    <div>
+      <footer class="text-center bg-dark text-light py-2 pt-3">
+          <p>Copyright &copy; 2023 Made Nice</p>
+      </footer>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
