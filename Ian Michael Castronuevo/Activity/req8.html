@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Requirement 8</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+ <div>
+    <p class="h1">Single Dropdown</p>
+    <button class="border-1 rounded-2" type="button" data-bs-toggle="dropdown">Select Course</button>
+      <ul class="dropdown-menu dropdown-menu-lg-end ms-1">
+        <li class="ms-1">Programming</li>
+        <li class="ms-1">Javascript</li>
+        <li class="ms-1">Python</li>
+      </ul>
+  </div>
+
+ </div>
+ <div>
+    <p class="h1">Dropdown with anchor tag</p>
+    <div class="dropdown show ">
+      <a class="btn btn-success dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Javascript Courses</a>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+        <a class="dropdown-item" href="https://www.coursera.org/courses?query=javascript">Coursera</a>
+        <a class="dropdown-item" href="https://www.udemy.com/course/the-complete-javascript-course/?utm_source=adwords&utm_medium=udemyads&utm_campaign=WebDevelopment_v.PROF_la.EN_cc.ROW_ti.8322&utm_content=deal4584&utm_term=_._ag_80385735315_._ad_535397279733_._kw__._de_c_._dm__._pl__._ti_dsa-774930035449_._li_1011169_._pd__._&matchtype=&gclid=CjwKCAjwgZCoBhBnEiwAz35RwrXYblyIlIAP8sXNhi_qaBxO95jYepoMct0Y2ws9OCL3lRTYefAkoBoC20QQAvD_BwE">Udemy</a>
+        <a class="dropdown-item" href="https://www.codecademy.com/catalog/language/javascript">Codecademy</a>
+      </div>
+    </div>
+ </div>
+ <div class="dropdown">
+  <p class="h1">Dropdown with Header</p>
+  <button class=" btn btn-info dropdown-toggle" type="button" data-bs-toggle="dropdown">Programming Courses</button>
+    <div class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="dropdownMenuLink">
+      <h6 class="dropdown-header">This is the Dropdown header</h6>
+      <a class="dropdown-item" href="https://www.coursera.org/courses?query=javascript">Coursera</a>
+      <a class="dropdown-item" href="https://www.udemy.com/course/the-complete-javascript-course/?utm_source=adwords&utm_medium=udemyads&utm_campaign=WebDevelopment_v.PROF_la.EN_cc.ROW_ti.8322&utm_content=deal4584&utm_term=_._ag_80385735315_._ad_535397279733_._kw__._de_c_._dm__._pl__._ti_dsa-774930035449_._li_1011169_._pd__._&matchtype=&gclid=CjwKCAjwgZCoBhBnEiwAz35RwrXYblyIlIAP8sXNhi_qaBxO95jYepoMct0Y2ws9OCL3lRTYefAkoBoC20QQAvD_BwE">Udemy</a>
+      <a class="dropdown-item" href="https://www.codecademy.com/catalog/language/javascript">Codecademy</a>
+    </div>
+</div>
+ <div>
+    <p class="h1">Drowpdown with divider</p>
+    <div class="dropdown show">
+      <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Programming Courses</a>
+      <div class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="dropdownMenuLink">
+        <h6 class="dropdown-header">This is the Dropdown header</h6>
+        <a class="dropdown-item" href="https://www.coursera.org/courses?query=javascript">Coursera</a>
+        <a class="dropdown-item" href="https://www.udemy.com/course/the-complete-javascript-course/?utm_source=adwords&utm_medium=udemyads&utm_campaign=WebDevelopment_v.PROF_la.EN_cc.ROW_ti.8322&utm_content=deal4584&utm_term=_._ag_80385735315_._ad_535397279733_._kw__._de_c_._dm__._pl__._ti_dsa-774930035449_._li_1011169_._pd__._&matchtype=&gclid=CjwKCAjwgZCoBhBnEiwAz35RwrXYblyIlIAP8sXNhi_qaBxO95jYepoMct0Y2ws9OCL3lRTYefAkoBoC20QQAvD_BwE">Udemy</a>
+        <a class="dropdown-item" href="https://www.codecademy.com/catalog/language/javascript">Codecademy</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="https://kodego.ph/courses?hsa_acc=2048530460&hsa_cam=18134587407&hsa_grp=141850643953&hsa_ad=657196934633&hsa_src&hsa_tgt&hsa_kw&hsa_mt=b&hsa_net=adwords&hsa_ver=3&utm_medium=ppc&utm_source=google&utm_campaign=pmax&gclid=CjwKCAjwgZCoBhBnEiwAz35RwoYpKiyQKBK7f_FPIkx32Mns-xsfkNL-5hZ2NV1RSU2I_eCu1uwQvxoCVFYQAvD_BwE">Kodego</a>
+      </div>
+    </div>
+ </div>
+ <div>
+    <p class="h1">Dropdown with disabled</p>
+    <div class="dropdown show ">
+      <a class="btn btn-danger dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Javascript Courses</a>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item disabled" href="#">Disabled item</a>
+      </div>
+    </div>
+
+ </div>
+ <div>
+    <p class="h1">Dropdown with left right</p>
+    <div class="btn dropstart">
+      <button type="button" class="btn btn-secondary dropdown-toggle px-4" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Dropleft
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item " href="#">Something Else</a>
+      </div>
+    </div>
+    <div class="btn dropend">
+      <button type="button" class="btn btn-secondary dropdown-toggle px-4 w-100" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Dropright
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something Else</a>
+      </div>
+    </div>
+  
+ </div>
+ <div>
+    <p class="h1">Dropup</p>
+    <div class="btn-group dropup">
+      <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Dropup</button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="https://www.coursera.org/courses?query=javascript">Coursera</a>
+        <a class="dropdown-item" href="https://www.udemy.com/course/the-complete-javascript-course/?utm_source=adwords&utm_medium=udemyads&utm_campaign=WebDevelopment_v.PROF_la.EN_cc.ROW_ti.8322&utm_content=deal4584&utm_term=_._ag_80385735315_._ad_535397279733_._kw__._de_c_._dm__._pl__._ti_dsa-774930035449_._li_1011169_._pd__._&matchtype=&gclid=CjwKCAjwgZCoBhBnEiwAz35RwrXYblyIlIAP8sXNhi_qaBxO95jYepoMct0Y2ws9OCL3lRTYefAkoBoC20QQAvD_BwE">Udemy</a>
+        <a class="dropdown-item" href="https://www.codecademy.com/catalog/language/javascript">Codecademy</a>
+      </div>
+    </div>
+ </div>
+</body>
+</html>
