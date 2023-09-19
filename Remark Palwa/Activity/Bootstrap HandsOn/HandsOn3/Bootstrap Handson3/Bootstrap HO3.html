@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BootstrapHO3</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+
+
+</head>
+<body>
+    <nav class="bg-dark d-flex gap-5 pt-3 px-2">
+        <p class="text-light">Restaurant Demo</p>
+        <div class="container justify-content-center ">
+            <a href="#" class=" text-decoration-none mx-3">About Us</a>
+            <a href="#" class=" text-decoration-none mx-3">Contact Us</a>
+        </div>
+        <div>
+            <button type="button" class="btn bg-success text-light" data-bs-toggle="modal" data-bs-target="#myModal" >Order now &#128220;</button>
+        </div>
+        <div class="modal" id="myModal">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+          
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Stace Kitchen</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+          
+                <!-- Modal body -->
+                <div class="modal-body">
+                  List of Available Items
+                </div>
+                <div class="container-fluid">
+                    <table class="table table-striped">
+                        <thead class="border-dark border-bottom">
+                            <tr>
+                                <th>Item <br> Id</th>
+                                <th>Item <br>Name</th>
+                                <th>Item <br>Price</th>
+                                <th>Item <br> Category</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>F1</td>
+                                <td>Adobong <br>Pusit</td>
+                                <td>&#8369;150</td>
+                                <td>Viand</td>
+                                <td>
+                                    <button class="btn bg-success opacity-75">&#40;-&#41;</button>
+                                    <button class="btn bg-danger opacity-75 ">&#40;+&#41;</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>F2</td>
+                                <td>menudo</td>
+                                <td>&#8369;150</td>
+                                <td>Viand</td>
+                                <td>
+                                    <button class="btn bg-success opacity-75">&#40;-&#41;</button>
+                                    <button class="btn bg-danger opacity-75 ">&#40;+&#41;</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>F3</td>
+                                <td>kaldereta</td>
+                                <td>&#8369;150</td>
+                                <td>Viand</td>
+                                <td>
+                                    <button class="btn bg-success opacity-75">&#40;-&#41;</button>
+                                    <button class="btn bg-danger opacity-75 ">&#40;+&#41;</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>F4</td>
+                                <td>Beef Steak</td>
+                                <td>&#8369;150</td>
+                                <td>Viand</td>
+                                <td>
+                                    <button class="btn bg-success opacity-75">&#40;-&#41;</button>
+                                    <button class="btn bg-danger opacity-75 ">&#40;+&#41;</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>F5</td>
+                                <td>Bulalo</td>
+                                <td>&#8369;150</td>
+                                <td>Viand</td>
+                                <td>
+                                    <button class="btn bg-success opacity-75">&#40;-&#41;</button>
+                                    <button class="btn bg-danger opacity-75 ">&#40;+&#41;</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>F6</td>
+                                <td>Sinigang<br>Bangus</td>
+                                <td>&#8369;150</td>
+                                <td>Viand</td>
+                                <td>
+                                    <button class="btn bg-success opacity-75">&#40;-&#41;</button>
+                                    <button class="btn bg-danger opacity-75 ">&#40;+&#41;</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+          
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Check out</button>
+                </div>
+          
+              </div>
+            </div>
+          </div>
+        
+    </nav>
+    <div class="container-fluid">
+        <div class="text text-center">
+            <p><h1>Stace Kitchen</h1></p>
+            <p><h4>Welcome to "Stace Kitchen," where culinary artistry meets warm hospitality. Nestled in the heart of the city, our restaurant invites you on a gastronomic journey like no other. From delectable dishes crafted with locally sourced ingredients to a cozy ambiance, we promise an unforgettable dining experience.</h4></p>
+        </div>
+    <!-- main content menu -->
+        <div class="container-fluid">
+        <!-- first menu -->
+             <div class="row">
+                <div class="col-sm-3">
+                    <div class="card pb-3 mb-1">
+                        <div class="card-body ">
+                            <h5 class="card-title text-center">Adobong Pusit</h5>
+                            <img src="./Images/adobong-pusit-recipe.jpg" alt="adoboPusit" class="img-fluid">
+                            <p class="card-text">Good For 2-3 Person</p>
+                            <p><h5>&#8369;150</h5></p>
+                            <a href="#" class="btn btn-primary">Void</a>
+                        </div>
+                    </div>
+                </div>
+            <!-- second menu -->
+                <div class="col-sm-3">
+                    <div class="card mb-1">
+                        <div class="card-body h-50">
+                            <h5 class="card-title text-center">Beef Steak</h5>
+                            <img src="./Images/beef steak.jpg" alt="Beefsteak" class="img-fluid ">
+                            <p class="card-text">Good For 2-3 Person</p>
+                            <p><h5>&#8369;150</h5></p>
+                            <a href="#" class="btn btn-primary">Void</a>
+                        </div>
+                    </div>
+                </div>
+            <!-- third menu -->
+                <div class="col-sm-3">
+                    <div class="card mb-1">
+                        <div class="card-body h-50">
+                            <h5 class="card-title text-center">Bulalo</h5>
+                            <img src="./Images/Bulalo.jpg" alt="Bulalo" class="img-fluid ">
+                            <p class="card-text">Good For 2-3 Person</p>
+                            <p><h5>&#8369;150</h5></p>
+                            <a href="#" class="btn btn-primary">Void</a>
+                        </div>
+                    </div>
+                </div>
+            <!-- fourth menu -->
+                <div class="col-sm-3">
+                    <div class="card pb-4 mb-1">
+                        <div class="card-body h-50">
+                            <h5 class="card-title text-center">Kaldereta</h5>
+                            <img src="./Images/kaldereta.jpg" alt="Kaldereta" class="img-fluid ">
+                            <p class="card-text">Good For 2-3 Person</p>
+                            <p><h5>&#8369;150</h5></p>
+                            <a href="#" class="btn btn-primary">Void</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 5th menu -->
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="card pb-3">
+                    <div class="card-body ">
+                        <h5 class="card-title text-center">Adobong Pusit</h5>
+                        <img src="./Images/adobong-pusit-recipe.jpg" alt="adoboPusit" class="img-fluid">
+                        <p class="card-text">Good For 2-3 Person</p>
+                        <p><h5>&#8369;150</h5></p>
+                        <a href="#" class="btn btn-primary">Void</a>
+                    </div>
+                </div>
+            </div>
+            <!-- second menu -->
+            <div class="col-sm-3">
+                <div class="card ">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Beef Steak</h5>
+                        <img src="./Images/beef steak.jpg" alt="Beefsteak" class="img-fluid ">
+                         <p class="card-text">Good For 2-3 Person</p>
+                        <p><h5>&#8369;150</h5></p>
+                        <a href="#" class="btn btn-primary">Void</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    <button type="button" class="btn btn-primary position-absolute bottom- end-0 " data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        Chat With Us
+      </button>
+      
+      <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop"         data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Chat With Us</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-success">Send</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class=" container-fluid mt-5">
+        <footer class=" bg-dark text-light text-center">Remark Palwa</footer>
+    </div>
+    
+</body>
+<script src="./js/bootstrap.bundle.min.js"></script>
+</html>
