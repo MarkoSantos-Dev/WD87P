@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap1-8</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+</head>
+<body>
+    <Div>
+        <p class="text fs-1">Single Dropdown</p>
+        <button type="button" class="btn btn-light border-black">Select Courses</button>
+        <p class="text fs-1">Dropdown with anchor tag</p>
+        <div class="dropdown">
+            <a class="btn btn-success dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+              Javascript Courses
+            </a>
+          
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Sample1</a></li>
+              <li><a class="dropdown-item" href="#">Sample2</a></li>
+              <li><a class="dropdown-item" href="#">Sample3</a></li>
+            </ul>
+        </div>
+        <p class="text fs-1">Dropdown with Header</p>
+        <div>
+            <div class="btn-group">
+                <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                  Programming Curses
+                </button>
+                <ul class="dropdown-menu">
+                    <li><h6 class="dropdown-header">Dropdown header</h6></li>
+                    <li><a class="dropdown-item" href="#">Sample1</a></li>
+                    <li><a class="dropdown-item" href="#">Sample2</a></li>
+                </ul>
+            </div>    
+        </div>
+        <p class="text fs-1">Dropdown with Divider</p>
+        <div>
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                Programming Curses
+              </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Sample1</a></li>
+                    <li><a class="dropdown-item" href="#">Sample2</a></li>
+                    <li><a class="dropdown-item" href="#">Sample3</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+         </div>
+         <p class="text fs-1">Dropdown with Disables</p>
+         <div>
+            <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                Programming Curses
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Sample1</a></li>
+                <li><a class="dropdown-item disabled" href="#" tabindex="-1" aria-disabled="true">Sample2</a></li>
+                <li><a class="dropdown-item" href="#">Sample2</a></li>
+              </ul>
+         </div>
+         <p class="text fs-1">Dropdown with Left Right</p>
+         <div class="container">
+            <div class="btn-group dropstart col-5">
+                <button type="button" class="btn btn-secondary    dropdown-toggle  " data-bs-toggle="dropdown" >
+                  Programming Courses
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Sample1</a></li>
+                  <li><a class="dropdown-item" href="#">Sample2</a></li>
+                  <li><a class="dropdown-item" href="#">Sample3</a></li>
+                </ul>
+              </div>
+              <div class="btn-group dropend col-5">
+                <button type="button" class="btn btn-secondary   dropdown-toggle " data-bs-toggle="dropdown" >
+                    Programming Courses
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Sample1</a></li>
+                  <li><a class="dropdown-item" href="#">Sample2</a></li>
+                  <li><a class="dropdown-item" href="#">Sample3</a></li>
+                </ul>
+              </div>
+         </div>
+         <p class="text fs-1">DropUp</p>
+         <div class="btn-group dropup">
+            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropup
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Sample1</a></li>
+                <li><a class="dropdown-item" href="#">Sample2</a></li>
+                <li><a class="dropdown-item" href="#">Sample3</a></li>
+            </ul>
+          </div>
+
+
+
+
+
+
+
+    </Div>
+    
+</body>
+<script src="./js/bootstrap.bundle.min.js"></script>
+</html>
