@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap2</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+</head>
+<body>
+    <Div class="container align-items-center" >
+            <p class="text fs-1 fw-bold">Background Utilities</p>
+            <div class=" bg-primary text-light py-3 ">This is default primary background</div>
+            <div class=" bg-secondary bg-opacity-75 text-light py-2">This is 75% opacitysecondary background</div>
+            <div class=" bg-info opacity-50 text-light py-3">This is 50% opacity info background</div>
+            <div class="bg-danger bg-opacity-25 text-secondary-emphasis py-3">This is 25% opacity danger background </div>
+            <div class=" bg-success bg-opacity-10 text-dark py-3">This is 10% opacity success background</div>
+    </Div>
+    <div class="container">
+        <p class="text fs-1 fw-bold">Borders Utilities</p>
+        <span class="img-fluid ">
+            <img src="./images/Tiger.jpg" alt="Tiger Face" class=" border-top border-bottom border-primary border-3 w-25 h-25">
+        </span>
+        <span>
+            <img src="./images/Tiger.jpg" alt="Tiger Face" class=" border rounded-circle border-3 border-danger w-25 h-25">
+        </span>
+        <span>
+            <img src="./images/Tiger.jpg" alt="Tiger Face" class="border border-end-0 border-3 border-primary w-25 h-25">
+        </span>
+    </div>
+    <div class="container">
+        <p class="text fs-1 fw-bold">Colors Utilities</p>
+        <table class="table table-dark table-striped table-bordered">
+            <thead class="border-bottom border-2">
+                <tr>
+                    <th>Result</th>
+                    <th>Class Utilities</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="text text-primary pb-3">Primary Default Text</td>
+                    <td>text-primary</td>
+                </tr>
+                <tr>
+                    <td class="text-danger text-opacity-50 pb-3">danger with 50% opacity</td>
+                    <td>text-danger text-opacity-50</td>
+                </tr>
+                <tr>
+                    <td class="text-success text-opacity-25 pb-3">success with 25% opacity</td>
+                    <td>text-success text-opacity-25</td>
+                </tr>
+                <tr>
+                    <td class="text-light text-opacity-75 pb-3">Light with 75% opacity</td>
+                    <td>text-light text-opacity-75</td>
+                </tr>
+                <tr>
+                    <td class="text text-muted pb-3">this is muted Text </td>
+                    <td>text-muted</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+    <div class="container">
+        <p class="text fs-1 fw-bold">Display block vs. Block</p>
+        <div class=" bg-primary bg-opacity-75 px-2 mb-1">
+            <img src="./images/lion.png" alt="Lion Head" class="w-25 h-25 p-1 mx-1" >
+            <img src="./images/Tiger.jpg" alt="Tiger head" class="w-25 h-25 p-2">
+        </div>
+        <div  class=" bg-secondary bg-opacity-75 px-2 mb-1">
+            <img src="./images/lion.png" alt="Lion Head" class="w-25 h-25 p-1 mx-1"  >
+        </div>
+        <div  class=" bg-secondary bg-opacity-75 px-2 mb-1">
+            <img src="./images/Tiger.jpg" alt="tiger head" class="w-25 h-25 p-1 mx-1" >
+        </div>
+    </div>
+    <div class="container">
+        <p class="text fs-1 fw-bold">Hide First Image in Small Screen</p>
+        <div class="  bg-primary bg-opacity-75 px-2 mb-1 ">
+            <img src="./images/lion.png" alt="Lion Head" class=" d-none d-md-inline w-25 h-25 p-1 ">
+            <img src="./images/Tiger.jpg" alt="Tiger head" class="w-25 h-25 p-2 ">
+        </div>
+    </div>
+    <div class="container">
+        <p class="text fs-1 fw-bold">Visible 2 Image in Medium Screen Only</p>
+        <div class=" container  bg-danger mb-1">
+            <img src="./images/lion.png" alt="Lion Head" class="w-25 h-25 p-1 d-none d-md-inline d-lg-none ">
+            <img src="./images/Tiger.jpg" alt="Tiger Head" class="w-25 h-25 p-2 d-none d-md-inline d-lg-none " >
+        </div>
+    </div>
+    <div class="container">
+        <p class="text fs-1 fw-bold">2nd Image is displayed only in small screen</p>
+        <div class=" container  bg-danger mb-1">
+            <img src="./images/lion.png" alt="Lion Head" class="w-25 h-25 p-1 d-none d-md-inline ">
+            <img src="./images/Tiger.jpg" alt="Tiger Head" class="w-25 h-25 p-2  d-sm-none " >
+        </div>
+    </div>
+    
+</body>
+<script src="./js/bootstrap.bundle.min.js"></script>
+</html>
