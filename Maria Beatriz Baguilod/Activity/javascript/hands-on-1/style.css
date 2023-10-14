@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif
+}
+
+body {
+    background-color: #f7f2eb;
+}
+
+.grade {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    background-color: #081f5c;
+    color: #f7f2eb;
+    width: 50vw;
+    text-align: center;
+    padding: 1rem;
+}
+
+p {
+    background-color: #f2f0de;
+    color: #081f5c;
+    width: 50vw;
+    text-align: center;
+    padding: 5rem;
+    font-size: 1.5em;
+}
+
