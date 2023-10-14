@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript | Hands On 3</title>
+    <link href="./style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="form-section">
+        <h1 class="text-uppercase mt-5 ms-5">Grade Calculator</h1>
+        <p class="ms-5">Hi, <span id="student-name"></span>!</p>
+
+        <form>
+            <label for="mathematics">Mathematics:</label>
+            <input type="number" id="mathematics" name="mathematics" placeholder="Input grade here" required>
+
+            <label for="science">Science:</label>
+            <input type="number" id="science" name="science" placeholder="Input grade here" required>
+
+            <label for="english">English:</label>
+            <input type="number" id="english" name="english" placeholder="Input grade here" required>
+
+            <label for="social-science">Social Science:</label>
+            <input type="number" id="social-science" name="social-science" placeholder="Input grade here" required>
+
+            <label for="history">History:</label>
+            <input type="number" id="history" name="history" placeholder="Input grade here" required>
+
+            <label for="physical-education">Physical Education:</label>
+            <input type="number" id="physical-education" name="physical-education" placeholder="Input grade here" required>
+
+            <label for="filipino">Filipino:</label>
+            <input type="number" id="filipino" name="filipino" placeholder="Input grade here" required>
+
+            <label for="christian-living">Christian Living:</label>
+            <input type="number" id="christian-living" name="christian-living" placeholder="Input grade here" required>
+        </form>
+        <button id="compute-button" class="btn btn-dark ms-5 mt-3">Compute Grade</button>
+    </div>
+    <div class="computation-section">
+        <p>Your Average: <p id="getAverage" class="h5 text-black"></p></p>
+        <p id="next-steps" class="h6 text-black"></p>
+        <p>These are your failed subjects: <p id="failed-subjects" class="h5 text-black"></p></p>
+        <p>These are your passed subjects: <p id="passed-subjects" class="h5 text-black"></p></p>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
