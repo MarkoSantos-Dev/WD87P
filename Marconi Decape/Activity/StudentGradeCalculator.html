@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Student Grade Calculator</title>
+    <style>
+      body {
+        background-color: #f4f4f4;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+      h1 {
+        color: #333;
+      }
+      input {
+        padding: 5px;
+        margin: 5px;
+        border: 1px solid #ccc;
+      }
+      button {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
+      p {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Student Grade Calculator</h1>
+    <input type="text" id="studentName" placeholder="Enter Student Name" />
+    <br /><br />
+    <input type="number" id="subject1" placeholder="English" />
+    <input type="number" id="subject2" placeholder="Math" />
+    <input type="number" id="subject3" placeholder="Science" />
+    <input type="number" id="subject4" placeholder="P.E" />
+    <input type="number" id="subject5" placeholder="Filipino" />
+    <input type="number" id="subject6" placeholder="Values" />
+    <input type="number" id="subject7" placeholder="Araling Panlipunan" />
+    <input type="number" id="subject8" placeholder="MAPEH" />
+    <br /><br />
+    <button onclick="computeGrade()">Compute Grade</button>
+
+    <script src="index.js"></script>
+  </body>
+</html>
