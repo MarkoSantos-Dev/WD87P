@@ -1,0 +1,35 @@
+h1{
+    text-align: center;
+    margin: 1rem;
+}
+.card-img-top {
+    width: 12rem;
+    height: 15rem;
+}
+
+.products-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card {
+    margin: 1rem;
+    width: 50rem;
+    height: 30rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);;
+}
+
+form {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.show-card {
+    width: 50%;
+    margin: 0 auto;
+    padding: 5rem;
+}
