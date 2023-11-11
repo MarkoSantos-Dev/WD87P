@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Products</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+     <!-- navbar -->
+     <nav class="navbar navbar-expand-lg bg-danger">
+        <div class="container-fluid">
+            <a class="navbar-brand text-light" href="#">
+                <img src="https://cdn.worldvectorlogo.com/logos/del-monte-3.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                Del Monte
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active text-light" aria-current="page" href="/products">Home</a>
+                    <a class="nav-link text-light" href="/products/edit">Edit Products</a>
+                    <a class="nav-link text-light" href="/products/new">New Products</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- end of navbar -->
+
+    <h1>Edit Product</h1>
+    <form action="/products/<%= product.id %>?_method=PATCH" method="post">
+        <div class="mb-3">
+            <label for="product" class="form-label">Product Name</label>
+            <input type="text" class="form-control" id="product" placeholder="Product Name" name="product">
+        </div>
+        <div class="mb-3">
+            <label for="brand" class="form-label">Brand</label>
+            <input type="text" class="form-control" id="brand" name="brand" placeholder="Brand Name">
+        </div>
+        <div class="mb-3">
+            <label for="img" class="form-label">Image Link</label>
+            <input type="text" class="form-control" id="image" name="image" placeholder="Insert image address here">
+        </div>
+        <button type="submit" class="btn btn-danger">Save</button>
+        <a href="/products" class="btn btn-danger">Back to Index</a>
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-danger">
+        <div class="container-fluid">
+            <a class="navbar-brand text-light" href="#">
+                <img src="https://cdn.worldvectorlogo.com/logos/del-monte-3.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                Del Monte
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active text-light" aria-current="page" href="/products">Home</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- end of navbar -->
+
+    <h1>Del Monte Products</h1>
+    <!-- products -->
+    <div class="products-card">
+        <% for (p of products) {%> 
+            <div class="card" id="<%= p.id %>">
+                <img src="<%= p.img %>" class="card-img-top" alt="delmonte-product">
+                <div class="card-body">
+                    <h5 class="card-title"><%= p.product %></h5>
+                    <p class="card-text"><%= p.brand %></p>
+                    <!-- Link to the product's show page -->
+                    <a href="/products/<%= p.id %>" class="btn btn-danger">See details</a>
+                </div>
+            </div>
+        <% } %>    
+    </div>
+</body>
+</html>
