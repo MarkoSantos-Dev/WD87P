@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url(./images/background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.female {
+    position: absolute;
+    left: 55%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    width: 30vw;
+    height: auto;
+    opacity: 0;
+    animation: fadeIn 2s 1s forwards, fadeOut 1s 5s forwards;
+}
+
+.headline-1 {
+    width: 65rem;
+    position: absolute;
+    top: 55%;
+    transform: translate(-35%, -50%);
+    animation: slideInLeft 2s 2s forwards, fadeOut 1s 5s forwards;
+
+}
+
+.logo {
+    width: 25rem;
+    height: auto;
+    position: absolute;
+    right: -25rem; 
+    animation: slideInRight 2s forwards 6s;
+}
+
+.headline-2 {
+    width: 50rem;
+    margin-left: 5rem;
+    position: absolute;
+    opacity: 0;
+    animation: fadeIn 2s forwards 7s;
+}
+
+.subheadline {
+    position: absolute;
+    opacity: 0;
+    animation: fadeIn 2s forwards 8s;
+}
+
+.learn-more {
+    position: absolute;
+    bottom: 6rem;
+    left: 45%;
+    opacity: 0;
+    animation: fadeIn 2s forwards 9s;
+}
+
+.replay {
+    position: absolute;
+    bottom: 2rem;
+    left: 45%;
+    opacity: 0;
+    animation: fadeIn 2s forwards 10s;
+}
+
+@keyframes slideInLeft {
+    from {
+        left: -100%;
+        opacity: 0;
+    }
+    to {
+        left: 50%;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        right: -25rem; /* Initial position outside the viewport */
+    }
+    to {
+        right: 0;
+    }
+}
